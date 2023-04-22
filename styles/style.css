@@ -18,6 +18,9 @@ img {
     max-width: 50%;
     border: 2px solid #DFD5A5;
 }
+a {
+    color: whitesmoke;
+  }
 
 footer {
     margin-top: 15px;
