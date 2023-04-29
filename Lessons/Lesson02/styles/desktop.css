@@ -49,6 +49,13 @@ a {
     color: whitesmoke;
 }
 
+img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    
+}
+
 footer {
     margin-top: 15px;
     padding: 5px;
