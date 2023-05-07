@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 992px;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #DFD5A5;
+    background-color: #32383a;
+}
+
+header {
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+    color: #DFD5A5;
+    text-shadow: 1px 1px 2px #373E40;
+    background: #99998b;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    background: #305252;
+}
+
+nav a {
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    color: #DFD5A5;
+}
+
+a.nav-link {
+    padding: 10px;
+    align-self: center;
+}
+
+.nav-link:hover {
+    background-color: #373E40;
+    color: white;
+}
+
+nav a:link, nav a:visited {
+    color: #DFD5A5;
+}
+
+.container {
+    max-width: 992px;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    background: #99998b;
+}
+
+main {
+    text-decoration: none;
+    color:black;
+}
+
+main img {
+    padding: 25px;
+    width: 100%;
+}
+
+main h1, h2 {
+    padding-left: 15px;
+    color: #DFD5A5;
+    text-shadow: 1px 1px 2px #32383a;
+}
+main h3, h4 {
+    text-align: center;
+}
+
+main .href {
+    text-align: center;
+    text-decoration: none;
+}
+main p {
+    font-size: 1.2em;
+    margin-top: 0 25px;
+    padding: 15px;
+    text-align: left;
+    color: black;
+}
+
+/* coolors palette widget */
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    padding-inline: 15px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    color: rgb(0, 0, 0);
+    width: auto;
+    height: 3em;
+}
+
+.primary {
+    background-color: #d4d4c2ff;
+}
+
+.secondary {
+    background-color: #dfd5a5ff;
+}
+
+.accent1 {
+    background-color: #305252ff;
+}
+
+.accent2 {
+    background-color: #373E40;
+}
+
+.accent3 {
+    background-color: #f5f5f5ff;
+}
+
+/* finish coolors palette widget */
+
+.example {
+    margin: 15px;
+    background-color: #f5f5f5ff;
+}
+
+footer {
+    margin-top: 25px;
+    padding: 5px;
+    text-align: center;
+    background: #305252;
+}
+
+footer p {
+    font-style: normal;
+}
+
+.copyright {
+    color: #DFD5A5;
+}
+
+#current-date {
+    display: flexbox;
+    color: #f5f5f5;
+}
