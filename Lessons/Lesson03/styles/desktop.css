@@ -8,7 +8,6 @@ body {
     max-width: 992px;
     margin: 0 auto;
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
-    font-size: 16px;
     color: #DFD5A5;
     background-color: #6c787c;
 }
@@ -62,8 +61,7 @@ nav a:link, nav a:visited {
 }
 
 main {
-    text-decoration: none;
-    color:black;
+    color: #111111;
 }
 
 main img {
@@ -73,8 +71,8 @@ main img {
 
 main h1, h2 {
     padding-left: 15px;
-    color: #DFD5A5;
-    text-shadow: 1px 1px 2px #32383a;
+    text-shadow: 1px 1px 2px #d4d4c2ff;
+    
 }
 main h3, h4 {
     text-align: center;
