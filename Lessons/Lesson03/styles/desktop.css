@@ -10,7 +10,7 @@ body {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     font-size: 16px;
     color: #DFD5A5;
-    background-color: #32383a;
+    background-color: #6c787c;
 }
 
 header {
@@ -20,7 +20,7 @@ header {
     text-align: center;
     color: #DFD5A5;
     text-shadow: 1px 1px 2px #373E40;
-    background: #99998b;
+    background:#373E40;
 }
 
 .navbar {
