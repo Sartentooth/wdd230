@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;900&display=swap');
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    color: #DFD5A5;
+    background-color: #6c787c;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+h1,
+h2,
+p {
+    margin-left: 2vw;
+}
+
+/*-----------------header config-----------------*/
+header {
+    padding: 20px 20px;
+    margin: 0;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #373E40;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.current-dateTime {
+    text-align: justify;
+    font-size: 1.2rem;
+    color: #DFD5A5;
+}
+
+.social img {
+    padding: 0 0 5px 5px;
+    width: 50px;
+}
+
+/*-----------------End header config-----------------*/
+
+/*-----------------Navigation bar config-----------------*/
+
+nav button {
+    /* boton con tres lineas */
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #d4d4c2ff;
+}
+
+nav {
+    margin-top: 25px;
+    background: #305252;
+    /* fondo del navbar */
+}
+
+nav ul {
+    list-style-type: none;
+    /* elimino los puntos de la lista*/
+    padding: 0;
+    /*con padding 0 elimino el espaciuo que queda de los puntos */
+    margin: 0;
+    /*con margin elimino el espacio entre el boton y el nav*/
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #DFD5A5;
+
+}
+
+nav ul li a.nav-link:hover {
+    background-color: #373E40;
+    color: white;
+}
+
+nav ul li a:hover,
+nav ul li a:visited {
+    color: #b4ac84;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+/* configuración del comportamiento del botón */
+
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
+
+/*-----------------End Navigation bar config-------------*/
+
+/*-----------------Main config-----------------*/
+main {
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+}
+
+main div.container {
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+    background-color: #99998b;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    height: 200px;
+    margin: 0 0 5px 5px;
+    border: 1px solid #555;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-----------------End Main config-------------*/
+
+/*-----------------Footer config-----------------*/
+footer {
+    display:flex;
+    margin-top: 25px;
+    padding: 5px;
+    align-items: first baseline;
+    justify-content: center;
+    background-color: #305252;
+}
+
+footer p {
+    font-style: normal;
+}
+
+.br {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+
+}
+.copyright,
+.location,
+.date {
+    color: #DFD5A5;
+}
+
+#current-date {
+    color: #f5f5f5;
+}
+
+/*-----------------End Footer config-------------*/

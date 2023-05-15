@@ -1,0 +1,76 @@
+@media only screen and (min-width: 64rem) {
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    
+    nav ul li a {
+        padding: .5rem 1rem;
+    }
+
+    main div.container {
+        /*min-width: 64rem;*/
+        margin-top: 25px;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        background-color: #99998b;
+    }
+    
+    /* NEWS */
+    .box1 {
+        width:auto;
+        height: 200px;
+        border: 1px solid #555;
+        grid-area: 1 / 1 / 2 / 2;
+        text-align: center;
+    }
+    
+    /* HERO IMG */
+    .box2 {
+        width:auto;
+        height: 410px;
+        border: 1px solid #555;
+        grid-area: 1 / 2 / 3 / 3;
+        text-align: center;
+    }
+    
+    /* EVENTS */
+    .box3 {
+        width:auto;
+        height: 200px;
+        border: 1px solid #555;
+        grid-area: 1 / 3 / 2 / 4;
+        text-align: center;
+    }
+    
+    /* WEATHER */
+    .box4 {
+        width:auto;
+        height: 200px;
+        border: 1px solid #555;
+        grid-area: 2 / 1 / 3 / 2;
+        text-align: center;
+    }
+    
+    /* JOIN */
+    .box5 {
+        width:auto;
+        height: 200px;
+        border: 1px solid #555;
+        grid-area: 2 / 3 / 3 / 4;
+        text-align: center;
+    }
+    
+    /* COMPANY SPOTLIGHTS */
+    .box6 {
+        width:auto;
+        height: 200px;
+        border: 1px solid #555;
+        grid-area: 3 / 1 / 4 / 4;
+        text-align: center;
+    }
+
+}
