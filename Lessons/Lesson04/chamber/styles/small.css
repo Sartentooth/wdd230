@@ -142,7 +142,6 @@ main {
 main div.container {
     margin-top: 25px;
     display: block;
-    text-align: center;
     background-color: #99998b;
 }
 
@@ -154,14 +153,15 @@ main div.container {
 .box6 {
     height: 200px;
     margin: 0 0 5px 5px;
+    line-height: 200px;
     border: 1px solid #555;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 /*-----------------End Main config-------------*/
 
 /*-----------------Footer config-----------------*/
+
 footer {
     display:flex;
     margin-top: 25px;
@@ -177,10 +177,9 @@ footer p {
 
 .br {
     display: flex;
-    flex-direction: column;
     width: max-content;
-
 }
+
 .copyright,
 .location,
 .date {

@@ -32,6 +32,7 @@
     .box2 {
         width:auto;
         height: 410px;
+        line-height: 410px;
         border: 1px solid #555;
         grid-area: 1 / 2 / 3 / 3;
         text-align: center;
