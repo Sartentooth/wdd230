@@ -10,6 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: Acme, Arial, sans-serif;
+    background-color: rgba(104, 54, 19, 0.7);
 }
 
 h1 {
