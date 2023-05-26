@@ -1,77 +1,55 @@
 @media only screen and (min-width: 64rem) {
-    
+
     h1 {
         font-size: 2em;
     }
-    
-    
+
+    p {
+        margin-left: 1vw;
+    }
+
     nav ul li a {
         padding: .5rem 1rem;
     }
 
-    main div.container {
-        /*min-width: 64rem;*/
-        margin-top: 25px;
-        display: grid;
-        gap: 5px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        background-color: #99998b;
-    }
-    
-    /* NEWS */
-    .box1 {
-        width:auto;
-        height: 200px;
-        border: 1px solid #555;
-        grid-area: 1 / 1 / 2 / 2;
-        text-align: center;
-    }
-    
-    /* HERO IMG */
-    .box2 {
-        width:auto;
-        height: 415px;
-        line-height: 415px;
-        border: 1px solid #555;
-        grid-area: 1 / 2 / 3 / 3;
-        text-align: center;
-    }
-    
-    /* EVENTS */
-    .box3 {
-        width:auto;
-        height: 200px;
-        border: 1px solid #555;
-        grid-area: 1 / 3 / 2 / 4;
-        text-align: center;
-    }
-    
-    /* WEATHER */
-    .box4 {
-        width:auto;
-        height: 200px;
-        border: 1px solid #555;
-        grid-area: 2 / 1 / 3 / 2;
-        text-align: center;
-    }
-    
-    /* JOIN */
-    .box5 {
-        width:auto;
-        height: 200px;
-        border: 1px solid #555;
-        grid-area: 2 / 3 / 3 / 4;
-        text-align: center;
-    }
-    
-    /* COMPANY SPOTLIGHTS */
-    .box6 {
-        width:auto;
-        height: 200px;
-        border: 1px solid #555;
-        grid-area: 3 / 1 / 4 / 4;
-        text-align: center;
+    .banner {
+        font-size: 2em;
     }
 
+    main div.container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto;
+        padding: 10px;
+        margin: 25px 50px;
+        grid-template-areas:
+        "box1 box2 box2 box3"
+        "box4 box2 box2 box5"
+        "box6 box6 box6 box6";
+    }
+
+    
+    .box1 {
+        grid-area: box1;
+    }
+
+    .box2 {
+        grid-area: box2;
+    }
+
+    .box3 {
+        grid-area: box3;
+    }
+
+    .box4 {
+        grid-area: box4;
+    }
+
+    .box5 {
+        grid-area: box5;
+    }
+
+    .box6 {
+        grid-area: box6;
+    }
 }

@@ -1,101 +1,74 @@
 @media only screen and (min-width: 35rem) {
-    
+
     h1 {
         font-size: 1.5em;
     }
-    
+
+    p {
+        margin-left: .5vw;
+    }
+
     nav button {
         display: none;
     }
 
-    nav ul#primaryNav { 
+    nav ul#primaryNav {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-left: 2vw;
-
-
     }
 
     nav ul li a {
         border: none;
     }
 
-    main div.container {
-        /*min-width: 35rem;*/
-        margin-top: 25px;
-        display: grid;
-        gap: 5px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        background-color: #99998b;
+    .banner {
+        font-size: 1.5em;
+    }
 
+    main div.container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 5px;
+        padding: 5px;
+        grid-template-areas:
+            "box2 box2"
+            "box1 box3"
+            "box4 box5"
+            "box6 box6";
     }
-    
-    /* NEWS */
+
     .box1 {
-        width:auto;
-        height: 200px;
-        line-height: 200px;
-        border: 1px solid #555;
-        grid-area: 2 / 1 / 3 / 2;
-        text-align: center;
+        grid-area: box1;
     }
-    
-    /* HERO IMG */
+
     .box2 {
-        width:auto;
-        height: 200px;
-        line-height: 200px;
-        border: 1px solid #555;
-        grid-area: 1 / 1 / 2 / 3;
-        text-align: center;
+        grid-area: box2;
     }
-    
-    /* EVENTS */
+
     .box3 {
-        width:auto;
-        height: 200px;
-        line-height: 200px;
-        border: 1px solid #555;
-        grid-area: 2 / 2 / 3 / 3;
-        text-align: center;
+        grid-area: box3;
     }
-    
-    /* WEATHER */
+
     .box4 {
-        width:auto;
-        height: 200px;
-        line-height: 200px;
-        border: 1px solid #555;
-        grid-area: 3 / 1 / 4 / 2;
-        text-align: center;
+        grid-area: box4;
     }
-    
-    /* JOIN */
+
     .box5 {
-        width:auto;
-        height: 200px;
-        line-height: 200px;
-        border: 1px solid #555;
-        grid-area: 3 / 2 / 4 / 3;
-        text-align: center;
+        grid-area: box5;
     }
-    
-    /* COMPANY SPOTLIGHTS */
+
     .box6 {
-        width:auto;
-        height: 200px;
-        line-height: 200px;
-        border: 1px solid #555;
-        grid-area: 4 / 1 / 5 / 3;
-        text-align: center;
+        grid-area: box6;
     }
+
 
     /* footer*/
 
     .br {
-        display: inline;    
+        display: inline;
     }
 
 
