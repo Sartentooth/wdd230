@@ -33,7 +33,7 @@ p {
 }
 
 /*-----------------banner config-----------------*/
-section.promo p {
+div.promo p {
     background-color: #305252;
     margin: 0vw;
     padding: 10px;

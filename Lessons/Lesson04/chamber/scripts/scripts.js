@@ -38,7 +38,7 @@ const promoText = "🤝🏼 Come join us for the chamber meet and greet Wednesda
 
 // by default only show on monday (1) and tuesday (2).
 // for testing porpuse change the value to another number between 0 to 6 (getDay()).
-if (date.getDay() == 1 || date.getDay() == 2) {
+if (date.getDay() == 6 || date.getDay() == 2) {
    
     promo.innerHTML = promoText;
     promo.style.display = 'block';
