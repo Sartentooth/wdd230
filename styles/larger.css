@@ -1,5 +1,6 @@
 @media only screen and (min-width: 64rem) {
 
+
     .navbar {
         display: flex;
         justify-content: center;
@@ -38,5 +39,9 @@
 
     section {
         border: 1px outset #DFD5A5;
-    }    
+    }
+    .hero {
+        margin-left: 150px;
+        justify-self: center;
+    }
 }
