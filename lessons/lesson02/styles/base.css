@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;900&display=swap');
+
+body {
+    max-width: 992px;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #DFD5A5;
+    background-color: #32383a;
+}
+
+header {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+    background: #305252;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+section {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #32383a;
+}
+
+section p {
+    color: #DFD5A5;
+}
+
+h4 {
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    background-color: #305252;
+}
+
+h5 {
+    margin-bottom: 5px;
+}
+
+a {
+    font-size: small;
+    color: whitesmoke;
+}
+
+img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    
+}
+
+footer {
+    margin-top: 15px;
+    padding: 5px;
+    text-align: center;
+    background: #305252;
+}
+
+footer p {
+    font-style: normal;
+}
+
+.column-text {
+    min-width: 255px;
+    border: 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(97, 96, 96, 0.041), 0 6px 20px 0 rgba(248, 248, 248, 0.178);
+}
+
+.copyright {
+    color: #DFD5A5;
+}
+
+#lastModified {
+    display: flexbox;
+    color: whitesmoke;
+}
