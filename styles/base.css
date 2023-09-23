@@ -23,7 +23,8 @@ nav {
 }
 
 nav a {
-    display: block;
+    display: flex;
+    justify-content: center;
     padding: .6rem 2vw;
     text-align: center;
     text-decoration: none;
