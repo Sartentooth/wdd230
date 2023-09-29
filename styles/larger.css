@@ -1,7 +1,7 @@
 @media only screen and (min-width: 64rem) {
 
 
-    .navbar {
+    nav.navbar {
         display: flex;
         justify-content: center;
     }
@@ -43,5 +43,9 @@
     .hero {
         margin-left: 150px;
         justify-self: center;
+    }
+
+    #menu {
+        display: none;
     }
 }
