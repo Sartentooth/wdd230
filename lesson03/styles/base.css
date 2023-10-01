@@ -95,11 +95,14 @@ ul {
     background-color: hsl(0, 0%, 77%);
 }
 
-.colors td {
-    color: rgb(173, 173, 173);
+td {
+    color: white;
     font-weight: bold;
     width: 25%;
     height: 3em;
+}
+.colors td.secondary{
+    color: black;
 }
 
 .primary {
