@@ -161,7 +161,7 @@ footer p {
     content: '☰';
 }
 
-#menu {
+#menu.open::before {
     content: '✖';
 }
 
