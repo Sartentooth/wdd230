@@ -7,7 +7,7 @@ body {
     font-size: 15px;
     color: #DFD5A5;
     background: #32383a;
-    border:1px solid #DFD5A5;
+    border: 1px solid #DFD5A5;
     border-style: outset;
 }
 
@@ -40,13 +40,13 @@ nav a:hover {
     background-color: #305252;
 }
 
-.navbar.open  {
-	display: block;
-	width: 100%;
+.navbar.open {
+    display: block;
+    width: 100%;
 }
 
 .navbar.open a {
-	display: block;
+    display: block;
 }
 
 /* first section */
@@ -61,10 +61,10 @@ section ul {
 section.card {
     margin-bottom: 5px;
     text-align: center;
-    
+
 }
 
-h2 { 
+h2 {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -121,7 +121,7 @@ footer p {
 
 .container {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr 1fr;
     grid-template-rows: 1fr;
     grid-auto-flow: row;
     justify-items: center;
@@ -141,20 +141,21 @@ footer p {
 .hero {
     justify-self: end;
 }
+
 .name {
     justify-self: start;
 }
 
 /* Menu Button config*/
 #menu {
-	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
-	background-color: #eee;
-	color: #000;
- 	position: absolute;
-	top: 1rem;
-	right: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
 #menu::before {
