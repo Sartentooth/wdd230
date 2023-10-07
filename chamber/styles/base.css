@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;900&display=swap');
+
+:root{
+    --text-color: black;
+    --bgr-body-color: blue;
+    --bgr-main-color: red;
+    --hover-color: yellow;
+}
+
+body {
+    max-width: 480px;
+    color: var(--text-color);
+    background-color: var(--bgr-body-color);
+}
+
+ 

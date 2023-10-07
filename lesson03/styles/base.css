@@ -2,14 +2,14 @@
 
 :root {
     /* change the values below to your colors from your palette */
-    --primary-color: #3F515F;
+    --primary-color: #1D3559;
     --secondary-color:#F5F5F5;
-    --accent1-color:#1D3559;
+    --accent1-color:#137f0b;
     --accent2-color:  #08689B;
 
     /* change the values below to your chosen font(s) */
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
-    --heading-font: 'Source Sans Pro', Helvetica, sans-serif;
+    --heading-font: Helvetica, sans-serif, 'Source Sans Pro';
     --paragraph-font: 'Source Sans Pro', Helvetica, sans-serif;
 
     /* these colors below should be chosen from among your palette colors above */
@@ -17,15 +17,15 @@
     /* headlines on a white background */
     --headline-color-on-color: #F5F5F5;
     /* headlines on a colored background */
-    --paragraph-color-on-white: #3F515F;
+    --paragraph-color-on-white: #1D3559;
     /* paragraph text on a white background */
     --paragraph-color-on-color: #F5F5F5;
     /* paragraph text on a colored background */
-    --paragraph-background-color: #3F515F;
+    --paragraph-background-color:#1D3559;
     --nav-link-color: #F5F5F5;
-    --nav-background-color: #1D3559;
+    --nav-background-color: #08689B;
     --nav-hover-link-color: white;
-    --nav-hover-background-color: #08689B;
+    --nav-hover-background-color: #137f0b;
 }
 
 body {
@@ -167,7 +167,8 @@ nav a:hover {
 
     grid-template-columns: repeat(6, 15%);
     grid-template-rows: 3em 1.5em 1.5em 3em;
-    grid-template-areas: ". . home home . ."
+    grid-template-areas: 
+        ". . home home . ."
         ". . . top . ."
         ". left left right right ."
         "page2 page2 . . page3 page3";
@@ -226,7 +227,7 @@ footer {
     margin-top: 20px;
     padding: 5px;
     text-align: center;
-    background: #3F515F;
+    background: #08689B;
 }
 
 footer p {
