@@ -1,15 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;900&display=swap');
 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 :root{
-    --text-color: black;
-    --bgr-body-color: blue;
-    --bgr-main-color: red;
-    --hover-color: yellow;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    --heading-font: Helvetica, sans-serif, 'Source Sans Pro';
+    --paragraph-font: 'Source Sans Pro', Helvetica, sans-serif;
+
+    --headline-color-on-white: #08689B;
+    --bgr-body-color: #F5F5F5;
+    --bgr-main-color: #1D3559;
+    --bgr-navBar-footer: #08689B;
+    --navBar-link-color: #F5F5F5;
+    --navBar-hover-color: #79D509;
+
+    --paragraph-background-color:#1D3559;
+    --paragraph-color-on-white: #1D3559;
+    --paragraph-color-on-color: #F5F5F5;
 }
 
 body {
     max-width: 480px;
-    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
     background-color: var(--bgr-body-color);
 }
 
