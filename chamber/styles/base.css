@@ -5,7 +5,8 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+ 
+/*-----------------global config-----------------*/
 :root{
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     --heading-font: Helvetica, sans-serif, 'Source Sans Pro';
@@ -43,7 +44,8 @@ h2,
 p {
     margin-left: 2vw;
 }
- 
+/*-----------------End global config-----------------*/
+
 /*-----------------header config-----------------*/
 header {
     padding: 20px 20px;
@@ -52,7 +54,7 @@ header {
     flex-flow: wrap;
     align-items: center;
     justify-content: space-around;
-    background-color: #373E40;
+    background-color: var(--bgr-header-color);
 }
 
 .chamber-logo img {
@@ -71,3 +73,75 @@ header {
 }
 
 /*-----------------End header config-----------------*/
+
+/*-----------------NavBar config-----------------*/
+
+.navbar {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: var(--bgr-navBar-footer);
+}
+
+
+.navbar a {
+    display: block;
+    justify-content: center;
+    padding: .6rem 2vw;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar {
+    display: none;
+}
+
+nav a:hover {
+    background-color: var(--navBar-hover-color);
+}
+
+.navbar.open {
+    display: block;
+    width: 100%;
+}
+
+.navbar.open a {
+    display: block;
+}
+
+#menu {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: var(--paragraph-color-on-white);
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.open::before {
+    content: '✖';
+}
+
+/*-----------------footer config-----------------*/
+
+footer {
+    display: flex;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: start;
+    align-items: first baseline;
+    justify-content: center;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--bgr-navBar-footer);
+}
+
+footer p {
+    font-style: normal;
+}
+
+.br {
+    display: flex;
+    width: max-content;
+}
