@@ -13,6 +13,7 @@
 
     --headline-color-on-white: #08689B;
     --bgr-body-color: #F5F5F5;
+    --bgr-header-color: #1D3559;
     --bgr-main-color: #1D3559;
     --bgr-navBar-footer: #08689B;
     --navBar-link-color: #F5F5F5;
@@ -32,4 +33,41 @@ body {
     background-color: var(--bgr-body-color);
 }
 
+h1 {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+h1,
+h2,
+p {
+    margin-left: 2vw;
+}
  
+/*-----------------header config-----------------*/
+header {
+    padding: 20px 20px;
+    margin: 0;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #373E40;
+}
+
+.chamber-logo img {
+    width: 100%;
+}
+
+.current-dateTime {
+    text-align: justify;
+    font-size: 1rem;
+    color: var(--paragraph-color-on-color);
+}
+
+.social-icon img {
+    padding: 0 0 5px 5px;
+    width: 50px;
+}
+
+/*-----------------End header config-----------------*/
