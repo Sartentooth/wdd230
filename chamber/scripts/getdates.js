@@ -5,8 +5,7 @@ const year = date.getFullYear();
 const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
 // Header Current Date
-const current = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(current);
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(date);
 document.querySelector(".current-dateTime").textContent = fulldate;
 
 
