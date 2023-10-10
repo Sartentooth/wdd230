@@ -1,6 +1,85 @@
-@media (min-width: 481px) and (max-width: 1024px) { 
+@media only screen and (min-width: 35rem) {
 
     #content {
-        background-color: aquamarine;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
-} 
+    #menu {
+        display: none;
+    }
+
+    .box {
+        display: none;
+    }
+
+    nav.navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a.nav-link {
+        padding: 10px;
+        align-self: center;
+    }
+
+    p {
+        margin-left: .5vw;
+    }
+
+    main div.container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px 20px;
+        padding: 10px;
+        margin: 25px 100px;
+        grid-template-areas:
+            "hero-image hero-image"
+            "events spotlight-1"
+            "weather spotlight-2"
+            "spotlight-3 .";
+    }
+
+    .hero-image {
+        grid-area: hero-image;
+    }
+
+    .events {
+        grid-area: events;
+    }
+
+    .weather {
+        grid-area: weather;
+    }
+
+    .spotlight-1 {
+        grid-area: spotlight-1;
+    }
+
+    .spotlight-2 {
+        grid-area: spotlight-2;
+    }
+
+    .spotlight-3 {
+        grid-area: spotlight-3;
+    }
+
+    .break-line {
+        display: inline;
+    }
+
+    .hero-image,
+    .spotlight-1,
+    .spotlight-2,
+    .spotlight-3,
+    .events,
+    .weather {
+        margin: 0;;
+    }
+}

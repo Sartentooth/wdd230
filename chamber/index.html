@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
     <head>
         <meta charset="UTF-8">
@@ -16,12 +16,12 @@
         <title>Sebastian Cascallares - WDD 230 - Chamber of Commercet</title>
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> <!-- change the favicon -->
         <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/larger.css">
-        <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/larger.css">
     </head>
 
-    <body id="content">
+    <body>
 
         <header>
             <div class="chamber-logo"><img src="images/small-logo.webp" alt="small chamver logo image"></div>
@@ -35,7 +35,9 @@
             <div class="current-dateTime"></div>
         </header>
 
-        <button id="menu"></button>
+        <div class="box">
+            <button id="menu"></button>
+        </div>
         <nav class="navbar">
             <a class="nav-link" href="">HOME</a>
             <a class="nav-link" href="">DISCOVER</a>
@@ -44,16 +46,26 @@
         </nav>
 
         <main>
-
+            <div class="container">
+                <div class="hero-image">HERO IMAGE</div>
+                <div class="events">EVENTS</div>
+                <div class="weather">WEATHER</div>
+                <div class="spotlight-1">SPOT 1</div>
+                <div class="spotlight-2">SPOT 2</div>
+                <div class="spotlight-3">SPOT 3</div>
+            </div>
         </main>
 
         <footer>
-            <p class="copyright">&copy; <span id="year"></span> The Lion of the West Gonzalo Sebastian Cascallares <span
-                    class="br"> WDD 230 Project </span></p>
-            <p class="location">Ituzaingó, Buenos Aires Argentina</p>
-            <p class="date">Last updated: <span id="lastModified"></span></p>
+            <p class="copyright">&copy; <span id="year"></span> The Lion of the West Gonzalo
+                Sebastian Cascallares <span class="break-line"> WWD230 Project </span>
+            </p>
+            <p class="location"> Ituzaingó, Buenos Aires Argentina </p>
+            <p class="date"> Last updated: <span id="lastModified"></span></p>
         </footer>
+
         <script src="scripts/getdates.js"></script>
+        <script src="scripts/button.js"></script>
     </body>
 
 </html>

@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;900&display=swap');
 
-* {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
- 
-/*-----------------global config-----------------*/
+
 :root{
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     --heading-font: Helvetica, sans-serif, 'Source Sans Pro';
@@ -26,27 +24,13 @@
 }
 
 body {
-    max-width: 480px;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     font-family: var(--heading-font);
-    text-align: center;
-    background-color: var(--bgr-body-color);
+    font-size: 15px;
+    background:var(--bgr-body-color);
+    border: 1px solid #1D3559;
 }
 
-h1 {
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-h1,
-h2,
-p {
-    margin-left: 2vw;
-}
-/*-----------------End global config-----------------*/
-
-/*-----------------header config-----------------*/
 header {
     padding: 20px 20px;
     margin: 0;
@@ -54,11 +38,16 @@ header {
     flex-flow: wrap;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--bgr-header-color);
+    background: var(--bgr-header-color);
 }
 
-.chamber-logo img {
+.chamber-logo img{
     width: 100%;
+}
+
+.social-icon img{
+    padding: 0 0 5px 5px;
+    width: 50px;
 }
 
 .current-dateTime {
@@ -67,23 +56,13 @@ header {
     color: var(--paragraph-color-on-color);
 }
 
-.social-icon img {
-    padding: 0 0 5px 5px;
-    width: 50px;
-}
-
-/*-----------------End header config-----------------*/
-
-/*-----------------NavBar config-----------------*/
-
 .navbar {
     display: flex;
     margin-bottom: 20px;
-    background-color: var(--bgr-navBar-footer);
+    background: var(--bgr-navBar-footer);
 }
 
-
-.navbar a {
+.navbar a { 
     display: block;
     justify-content: center;
     padding: .6rem 2vw;
@@ -95,10 +74,6 @@ header {
     display: none;
 }
 
-nav a:hover {
-    background-color: var(--navBar-hover-color);
-}
-
 .navbar.open {
     display: block;
     width: 100%;
@@ -108,12 +83,23 @@ nav a:hover {
     display: block;
 }
 
+a { 
+    color: var(--paragraph-color-on-color);
+    text-decoration: none;
+}
+
+nav a.nav-link:hover {
+    color: var(--bgr-main-color);
+    background-color: var(--navBar-hover-color);
+}
+
 #menu {
-    margin: .2rem 2vw;
-    background: transparent;
+    font-size: 1.5rem;
+    position: relative;
+    left: 0;
+    color: var(--paragraph-color-on-color);
     border: none;
-    font-size: 2rem;
-    color: var(--paragraph-color-on-white);
+    background-color: transparent;
 }
 
 #menu::before {
@@ -124,24 +110,66 @@ nav a:hover {
     content: '✖';
 }
 
-/*-----------------footer config-----------------*/
+.box {
+    margin: 0;
+    padding: 5px;
+    width: auto;
+    height: 30px;
+    background-color: var(--bgr-navBar-footer);
+}
+
+main { 
+    margin: 5px;
+    padding: 5px;
+    font-family: var(--paragraph-font);
+}
+
+main div.container {
+    display: block;
+}
+
+.hero-image,
+.spotlight-1,
+.spotlight-2,
+.spotlight-3,
+.events,
+.weather {
+    width: auto;
+    height: 150px;
+    margin-bottom: 20px;
+    border: 1px solid var(--bgr-main-color);
+    text-align: center;
+    line-height: 150px;
+    box-shadow: 0 4px 8px 0 var(--bgr-header-color), 0 6px 20px 0 var(--navBar-hover-color);
+    
+}
 
 footer {
     display: flex;
     margin-top: 20px;
     padding: 5px;
     text-align: start;
+    font-family: var(--paragraph-font);
     align-items: first baseline;
     justify-content: center;
-    color: var(--paragraph-color-on-color);
     background-color: var(--bgr-navBar-footer);
 }
 
-footer p {
+footer p { 
     font-style: normal;
 }
 
-.br {
+.break-line {
     display: flex;
     width: max-content;
+}
+
+.copyright, 
+.location,
+.date {
+    color: var(--paragraph-color-on-color);
+}
+
+#lastModified {
+    color: var(--paragraph-color-on-color);
 }
