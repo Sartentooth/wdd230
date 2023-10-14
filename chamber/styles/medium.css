@@ -10,6 +10,10 @@
         display: none;
     }
 
+    #mode {
+        padding-top: 0; 
+    }
+
     .box {
         display: none;
     }
