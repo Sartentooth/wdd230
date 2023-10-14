@@ -10,8 +10,8 @@
 
     main div.container {
         display: grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
-        grid-template-rows: auto auto auto; 
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(3, auto); 
         grid-template-areas: 
           "hero-image hero-image events"
           "hero-image hero-image weather"
