@@ -71,7 +71,7 @@ header {
 .navbar a { 
     display: block;
     justify-content: center;
-    padding: .6rem 2vw;
+    padding: 1rem 2vw;
     text-align: center;
     text-decoration: none;
 }
@@ -152,27 +152,90 @@ main div.container {
 
 footer {
     display: flex;
-    margin-top: 20px;
-    padding: 5px;
-    text-align: start;
-    font-family: var(--paragraph-font);
-    align-items: first baseline;
-    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--heading-font);
     background-color: var(--bgr-navBar-footer);
 }
 
-footer p { 
-    font-style: normal;
+footer img {
+    margin-top: 30px;
+    width: 150px;
 }
 
-.break-line {
-    display: flex;
-    width: max-content;
+footer h1, h2 {
+    padding-left: 2vw;
+    color: var(--paragraph-color-on-color);
+    text-decoration: #F5F5F5 underline;
+
+}
+footer h1 {
+    margin-top: 30px;
+}
+
+footer p {
+    padding-left: 2vw;
+    font-family: var(--paragraph-font);
+    
+}
+
+p.lion {
+    margin-top: 5px;
+    font-size: 2rem;
+    font-weight: normal;
+    color: var(--paragraph-color-on-color);
+}
+
+p.chamber {
+    margin-top: -30px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    color: var(--paragraph-color-on-color);
+
 }
 
 .copyright, 
 .location,
 .date {
+    margin-top: 50px;
+    text-align: start;
+    color: var(--paragraph-color-on-color);
+}
+
+.date {
+    padding-bottom: 30px;
+}
+
+.contact, 
+.visit-us {
+    text-align: start;
+}
+
+.mapouter {
+    border: none;
+    position: relative;
+    height: 450px;
+    width: auto;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    height: 450px;
+    width: auto;
+}
+
+.gmap_canvas iframe {
+    border: none;
+    position: relative;
+    z-index: 2
+}
+
+div.contact p, 
+div.visit-us p {
+    text-align: start;
     color: var(--paragraph-color-on-color);
 }
 
