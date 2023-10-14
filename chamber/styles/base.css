@@ -103,6 +103,7 @@ nav a.nav-link:hover {
     position: relative;
     font-size: 1.5rem;
     left: 0;
+    top: 15px;
     border: none;
     background-color: transparent;
     color: var(--paragraph-color-on-color);
@@ -117,10 +118,9 @@ nav a.nav-link:hover {
 }
 
 .box {
-    margin: 0;
     padding: 5px;
     width: auto;
-    height: 30px;
+    height: 60px;
     background-color: var(--bgr-navBar-footer);
 }
 
