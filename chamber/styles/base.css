@@ -58,7 +58,10 @@ header {
 
 #mode {
     font-size: 1rem;
+    padding-top: 5px;
     cursor: pointer;
+    color: var(--paragraph-color-on-color);
+
 }
 
 .navbar {
