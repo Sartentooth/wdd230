@@ -88,7 +88,7 @@
     footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, auto);
+        grid-auto-rows: auto;
     }
 
     footer h1 {
