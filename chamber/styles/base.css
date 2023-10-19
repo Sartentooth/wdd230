@@ -30,7 +30,6 @@ html {
 }
 
 body {
-
     margin: 0 auto;
     font-family: var(--heading-font);
     font-size: 15px;
@@ -162,6 +161,16 @@ main div.container {
     line-height: 250px;
     box-shadow: 0 4px 8px 0 #F5F5F5, 0 6px 10px 0 #454546;
 }
+.welcome-msg {
+    position: absolute;
+    padding: 0.5rem;
+    left: 10px;
+    font-size: 2rem;
+    line-height: 100%;
+    color: var(--paragraph-color-on-color);
+    box-shadow: 2px 0px 8px 2px #79D509;
+    background-color: #1D3559;
+}
 
 .stats {
     position: absolute;
@@ -169,19 +178,21 @@ main div.container {
     right: 25px;
     bottom: 25px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 #F5F5F5;
-    background-color: var(--bgr-navBar-footer);
+    box-shadow: 0 4px 8px 0 #79D509;
+    background-color: var(--bgr-main-color);
 }
 
-.stats h2 {
+.stats p {
     margin: 0;
+    font-weight: 600;
+    color: var(--paragraph-color-on-color);
     line-height: 50%;
     text-align: center;
 }
 
 .stats:hover {
     color: var(--bgr-body-color);
-    background: var(--navBar-hover-color);
+    background: var(--bgr-navBar-footer);
 }
 
 .hero {
@@ -205,9 +216,8 @@ footer img {
     width: 150px;
 }
 
-footer h1 {
+footer h3 {
     margin-top: 30px;
-    padding-left: 2vw;
     color: var(--paragraph-color-on-color);
     text-decoration: #F5F5F5 underline;
 
