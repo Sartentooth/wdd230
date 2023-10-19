@@ -12,34 +12,11 @@
         display: grid; 
         grid-template-columns: repeat(3, 1fr); 
         grid-template-rows: repeat(3, auto); 
-        grid-template-areas: 
+        grid-template-areas:
+          "title-msg title-msg title-msg" 
           "hero-image hero-image events"
           "hero-image hero-image weather"
           "spotlight-1 spotlight-2 spotlight-3"; 
-    }
-
-    .hero-image {
-        grid-area: hero-image;
-    }
-
-    .events {
-        grid-area: events;
-    }
-
-    .weather {
-        grid-area: weather;
-    }
-
-    .spotlight-1 {
-        grid-area: spotlight-1;
-    }
-
-    .spotlight-2 {
-        grid-area: spotlight-2;
-    }
-
-    .spotlight-3 {
-        grid-area: spotlight-3;
     }
 
     .hero-image {

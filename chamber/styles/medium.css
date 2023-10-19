@@ -33,6 +33,12 @@
         align-self: center;
     }
 
+    h1,
+    h2 {
+        margin: 0;
+        padding: 0;
+    }
+
     p {
         margin-left: .5vw;
     }
@@ -45,10 +51,15 @@
         padding: 10px;
         margin: 25px 100px;
         grid-template-areas:
+            "title-msg title-msg"
             "hero-image hero-image"
             "events spotlight-1"
             "weather spotlight-2"
             "spotlight-3 .";
+    }
+
+    .title-msg {
+        grid-area: title-msg;
     }
 
     .hero-image {
@@ -93,6 +104,15 @@
         height: 520px;
         line-height: 500px;
     }
+
+    .title-msg {
+        margin: 0;
+    }
+
+    .welcome-msg {
+        text-align: left;
+        font-size: 2rem;        
+    }
     
     footer {
         display: grid;
@@ -100,8 +120,8 @@
         grid-auto-rows: auto;
     }
 
-    footer h1 {
-        padding: 0;
+    footer h3 {
+        padding-left: 0;
     }
 
     .footer-img {
