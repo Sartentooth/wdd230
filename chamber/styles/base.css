@@ -169,6 +169,8 @@ main div.container {
 }
 
 .title-msg {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
     text-align: center;
     padding: 5vh 2vw;
@@ -178,8 +180,16 @@ main div.container {
     background: linear-gradient(180deg,rgb(29,53,89) 0%, rgb(86, 145, 200) 60%, rgb(121, 213, 9, .5) 90%);
 }
 
-.welcome-msg {
+.title-msg p {
+    margin: 0 auto;
+    padding-left: 2vw;
     font-size: 1.5rem;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.welcome-msg {
+    font-size: 1.3rem;
 }
 
 .stats {
