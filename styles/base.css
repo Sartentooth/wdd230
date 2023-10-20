@@ -49,6 +49,31 @@ nav a:hover {
     display: block;
 }
 
+div.hero-temple {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hero-temple img { 
+    width: 100%;
+    height: auto;
+}
+
+.overlay-label {
+    position: absolute;
+    text-align: center;
+    top: 1rem;
+    left: 1rem;
+    padding: 0 2vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant-caps: all-petite-caps;
+    color: goldenrod;
+    border-radius: 5px;
+    background-color: rgb(48, 82, 82, 0.1);
+}
+
 /* first section */
 section ul {
     list-style-type: none;
@@ -75,8 +100,9 @@ h3 {
     border-bottom: 1px solid #DFD5A5;
 }
 
-img {
-    max-width: 50%;
+.hero img {
+    width: 50%;
+    height: auto;
     border: 2px outset #DFD5A5;
 }
 

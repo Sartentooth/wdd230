@@ -3,13 +3,13 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description"
             content="WDD 230 - Web Frontend Development, Gonzalo Sebastian Cascallares, course assignment portal">
         <meta name="author" content="Gonzalo Sebastian Cascallares">
         <meta property="og:title" content="WDD230: Web Frontend Development">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="images/social-image.jpeg">
+        <meta property="og:image" content="images/social-image.webp">
         <meta property="og:image:width" content="1200px">
         <meta property="og:image:height" content="630px">
         <meta property="og:url" content="https://sartentooth.github.io/wdd230/index.html">
@@ -24,7 +24,7 @@
         <header>
             <div class="container">
                 <div class="hero">
-                    <img src="images/my-photo.jpeg" alt="my personal photo">
+                    <img src="images/my-photo.webp" alt="my personal photo" width="183" height="273">
                 </div>
                 <div class="name">
                     <h1>Gonzalo Sebastian Cascallares</h1>
@@ -44,6 +44,17 @@
                 target="_blank">SCRIPTURE</a>
         </nav>
 
+        <div class="hero-temple">
+            <picture>
+                <source srcset="images/buenos-airies-argentina-temple-hero-image-400.webp" media="(max-width: 400px)">
+                <img src="images/buenos-airies-argentina-temple-hero-image-800.webp" alt="table setting" width="799"
+                    height="500">
+                <div class="overlay-label">
+                    <p>Buenos Aires Argentina Temple</p>
+                </div>
+            </picture>
+        </div>
+
         <main>
             <h2>WDD 230: Web Frontend Development</h2>
 
@@ -51,22 +62,25 @@
                 <h3>Learning Activities</h3>
 
                 <ul>
-                    <li class="Lesson01"><b>Lesson 01:</b> <a href="lesson01/holygrail.html"
-                            target="_blank">Holy Grail</a> | <a href="https://codepen.io/Sartentooth/pen/NWegBbX"
-                            target="_blank">CodePen</a> | <a href="lesson01/media-query.html"
-                            target="_blank">CSS Media
+                    <li class="Lesson01"><b>Lesson 01:</b> <a href="lesson01/holygrail.html" target="_blank">Holy
+                            Grail</a> | <a href="https://codepen.io/Sartentooth/pen/NWegBbX" target="_blank">CodePen</a>
+                        | <a href="lesson01/media-query.html" target="_blank">CSS Media
                             query</a></li>
                     <li class="Lesson02"><b>Lesson 02:</b> <a href="lesson02/design.html" target="_blank">Web
                             Design
                             Principles</a> | <a href="lesson02/design-principles.html" target="_blank">Design
                             Principles Document</a></li>
                     <li class="Lesson03"><b>Lesson 03:</b> <a href="lesson03/images/css-combinator.jpg"
-                            target="_blank">CSS Combinators</a> | <a
-                            href="https://codepen.io/Sartentooth/pen/bGOMBYa" target="_blank">Pseudo-Elements</a> | <a href="https://codepen.io/Sartentooth/pen/wvRjgeR"
-                            target="_blank">Responsive Menu</a> | <a href="lesson03/chamber-site-plan.html" target="_blank">Chamber Site Plan</a></li>
-                    <li class="Lesson04"><b>Lesson 04:</b> <a href="https://codepen.io/Sartentooth/pen/ExGdeOy" target="_blank">CodePen</a> | <a href="chamber/index.html" target="_blank">Chamber of Commerce</a></li>
+                            target="_blank">CSS Combinators</a> | <a href="https://codepen.io/Sartentooth/pen/bGOMBYa"
+                            target="_blank">Pseudo-Elements</a> | <a href="https://codepen.io/Sartentooth/pen/wvRjgeR"
+                            target="_blank">Responsive Menu</a> | <a href="lesson03/chamber-site-plan.html"
+                            target="_blank">Chamber Site Plan</a></li>
+                    <li class="Lesson04"><b>Lesson 04:</b> <a href="https://codepen.io/Sartentooth/pen/ExGdeOy"
+                            target="_blank">CodePen</a> | <a href="chamber/index.html" target="_blank">Chamber of
+                            Commerce</a></li>
                     <li class="Lesson05"><b>Lesson 05:</b> <a href="lesson05/bom.html">DOM Manipulation</a></li>
-                    <li class="Lesson06"><b>Lesson 06:</b> <a href="lesson06/images/landscape.webp" target="_blank">WebP Image File Format</a></li>
+                    <li class="Lesson06"><b>Lesson 06:</b> <a href="lesson06/images/landscape.webp" target="_blank">WebP
+                            Image File Format</a></li>
                     <li class="Lesson07"><b>Lesson 07:</b> <a href="#">Lesson07</a></li>
                     <li class="Lesson08"><b>Lesson 08:</b> <a href="#">Lesson08</a></li>
                     <li class="Lesson09"><b>Lesson 09:</b> <a href="#">Lesson09</a></li>
@@ -74,7 +88,7 @@
                 </ul>
 
             </section>
-            
+
             <section class="card">
                 <h3>Information</h3>
                 <p class="country">Buenos Aires, Argentina</p>
@@ -86,7 +100,7 @@
             <div class="mapouter">
                 <div class="gmap_canvas"><iframe
                         src="https://maps.google.com/maps?q=ituzaingo%20buenos%20aires&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-                        style="width: 100%; height: 450px;"></iframe>
+                        style="width: 100%; height: 450px;" title="myFrame"></iframe>
                 </div>
             </div>
         </main>
