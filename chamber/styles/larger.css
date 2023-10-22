@@ -19,8 +19,8 @@
           "spotlight-1 spotlight-2 spotlight-3"; 
     }
 
-    .hero-image {
-        height: 520px;
-        line-height: 500px;
+    .hero-image img {
+        width: 100%;
+        height: auto;
     }
-}
+ }
