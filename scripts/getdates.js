@@ -18,4 +18,3 @@ document.querySelector("#page-visitor").innerHTML = "1";
 document.querySelector("#year").innerHTML = year;
 document.querySelector("#lastModified").innerHTML = document.lastModified;
 
-
