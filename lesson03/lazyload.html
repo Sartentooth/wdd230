@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description"
+            content="WDD 230 - Web Frontend Development, Gonzalo Sebastian Cascallares, course assignment portal">
+        <meta name="author" content="Gonzalo Sebastian Cascallares">
+        <title>Sebastian Cascallares - WDD 230 - Lazy Loading</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/lazy.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Lazy Loading Demostration</h1>
+        </header>
+        
+        <main>
+            <hr>
+            <picture><img src="https://picsum.photos/400/700?random=1.webp" alt="Random image generator" loading="eager" width="400" height="700"></picture>
+            <picture><img src="https://picsum.photos/400/700?random=2.webp" alt="Random image generator" loading="lazy" width="400" height="700"></picture>
+            <picture><img src="https://picsum.photos/400/700?random=3.webp" alt="Random image generator" loading="lazy" width="400" height="700"></picture>
+            <picture><img src="https://picsum.photos/400/700?random=4.webp" alt="Random image generator" loading="lazy" width="400" height="700"></picture>
+            <picture><img src="https://picsum.photos/400/700?random=5.webp" alt="Random image generator" loading="lazy" width="400" height="700"></picture>
+            <picture><img src="https://picsum.photos/400/700?random=6.webp" alt="Random image generator" loading="lazy" width="400" height="700"></picture>
+            <hr>
+        </main>
+        <footer>
+            <p class="copyright">Lazy Loading &copy; <span id="year"></span> - Gonzalo Sebastian Cascallares - Argentina
+            </p>
+            <p class="date">Last updated: <span id="lastModified"></span></p>
+        </footer>
+
+        <script src="scripts/getdates.js"></script>
+    </body>
+
+</html>

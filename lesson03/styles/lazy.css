@@ -1,0 +1,33 @@
+body { 
+    background: rgb(200, 201, 202);
+}
+
+main {
+    max-width: 740px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+img { 
+    animation: fade 5s;
+    margin-bottom: 50px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    text-align: center;
+}
