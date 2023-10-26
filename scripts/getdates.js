@@ -10,10 +10,6 @@ document.querySelector("#day-name").innerHTML = current_day;
 document.querySelector("#wind-info").innerHTML = "windy";
 document.querySelector("#temperature").innerHTML = "23°C";
 
-// Page Visitor static for now.
-document.querySelector("#page-visitor").innerHTML = "1";
-
-
 // Last Modified 
 document.querySelector("#year").innerHTML = year;
 document.querySelector("#lastModified").innerHTML = document.lastModified;
