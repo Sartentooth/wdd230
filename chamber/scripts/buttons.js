@@ -42,6 +42,5 @@ modeButton.addEventListener("click", () => {
 		hr.style.backgroundImage = "-webkit-linear-gradient(left, #08689B, #F5F5F5, #08689B)";
 		hamBox.style.background = "#08689B";
 		modeButton.textContent = "🌒 Dark mode";
-
 	}
 });

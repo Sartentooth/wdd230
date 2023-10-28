@@ -158,12 +158,11 @@ main div.container {
 .spotlight-2,
 .spotlight-3,
 .events,
-.weather {
+.weather-info {
     margin-bottom: 20px;
     width: 100%;
-    height: 250px;
+    height: 260px;
     text-align: center;
-    line-height: 250px;
     border: 1px solid var(--bgr-main-color);
     box-shadow: 0 4px 8px 0 #f5f5f5, 0 6px 10px 0 #454546;
 }
@@ -223,6 +222,39 @@ main div.container {
     object-fit: cover;
 }
 
+/* WINDCHILL */
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--bgr-main-color);
+    box-shadow: 0 4px 8px 0 #f5f5f5, 0 6px 10px 0 #454546;
+  }
+
+  #temperature,
+  #wind-speed,
+  #wind-info {
+    font-style: italic;
+    color: var(--headline-color-on-white);
+    font-weight: bold;
+  }
+  
+  .ingress {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+    
+  input {
+    width: 50px;
+  }
+
+  /* end windchill*/
+  
 footer {
     display: flex;
     flex-direction: column;
@@ -324,8 +356,8 @@ hr {
 
 .hero-image {
     width: 100%;
-    height: 100%;
-    line-height: 0.6;
+    height: auto;
+    line-height: 0.5;
 }
 
 .hero-image img {

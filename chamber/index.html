@@ -45,7 +45,7 @@
             <a class="nav-link" href="directory.html" target="_blank">DIRECTORY</a>
             <a class="nav-link" href="join.html" target="_blank">JOIN</a>
         </nav>
-               
+
         <main>
             <div class="container">
                 <div class="title-msg">
@@ -66,8 +66,16 @@
                 <div class="events">
                     <h2>EVENTS</h2>
                 </div>
-                <div class="weather">
-                    <h2>WEATHER</h2>
+                <div class="weather-info">
+                    <h2>WEATHER INFO</h2>
+                    <div class="ingress">
+                        <input type="number" name="temp" id="temp" value="50">
+                        <input type="number" name="wind" id="wind" value="5">
+                        <button class="btn">GO IT</button>
+                    </div>
+                    <p class="country">Buenos Aires, Argentina</p>
+                    <p>Temp: <span id="temperature"></span> - Wind: <span id="wind-speed"></span> - WindChill: <span
+                            id="wind-info"></span> </p>
                 </div>
                 <div class="spotlight-1">
                     <h2>SPOT 1</h2>
@@ -105,7 +113,7 @@
             <div class="mapouter">
                 <div class="gmap_canvas"><iframe
                         src="https://maps.google.com/maps?q=ituzaingo%20buenos%20aires&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-                        style="width: 100%; height: 450px;"></iframe>
+                        style="width: 100%; height: 450px;" loading="lazy"></iframe>
                 </div>
             </div>
 
@@ -123,6 +131,7 @@
 
         <script src="scripts/getdates.js"></script>
         <script src="scripts/buttons.js"></script>
+        <script src="scripts/windchill.js"></script>
     </body>
 
 </html>
