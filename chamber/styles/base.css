@@ -145,7 +145,8 @@ main {
     font-family: var(--paragraph-font);
 }
 
-main div.container {
+.container,
+.discovery-main {
     display: block;
 }
 
@@ -158,7 +159,8 @@ main div.container {
 .spotlight-2,
 .spotlight-3,
 .events,
-.weather-info {
+.weather-info,
+picture>img {
     margin-bottom: 20px;
     width: 100%;
     height: 260px;
@@ -363,4 +365,31 @@ hr {
 .hero-image img {
     width: 100%;
     height: auto;
+}
+
+/* discovery page*/
+.sideBar p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.welcome h1 {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--bgr-main-color);
+}
+
+.welcome p {
+    padding: 10px;
+    text-align: justify;
+}
+
+picture>img {
+    cursor: pointer;
+}
+
+.gallery picture>img:hover {
+    color: burlywood;
 }

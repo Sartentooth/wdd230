@@ -11,7 +11,7 @@
     }
 
     #mode {
-        padding-top: 0; 
+        padding-top: 0;
     }
 
     .box {
@@ -47,10 +47,10 @@
         padding: 10px;
         margin: 25px 100px;
         grid-template-areas:
-            "title-msg title-msg"
+            "title-msg  title-msg"
             "hero-image hero-image"
-            "events spotlight-1"
-            "weather spotlight-2"
+            "events     spotlight-1"
+            "weather    spotlight-2"
             "spotlight-3 .";
     }
 
@@ -60,7 +60,7 @@
 
     .hero-image {
         grid-area: hero-image;
-        
+
     }
 
     .events {
@@ -105,9 +105,9 @@
 
     .welcome-msg {
         text-align: center;
-        font-size: 2rem;        
+        font-size: 2rem;
     }
-    
+
     footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -147,19 +147,19 @@
         grid-column: 1/5;
         grid-row: 2/3;
     }
-    
+
     hr {
         grid-column: span 4;
         grid-row: span 1;
         display: initial;
         margin-top: 50px;
         width: 90%;
-        border: 0; 
-        height: 1px; 
+        border: 0;
+        height: 1px;
         background-image: -webkit-linear-gradient(left, #08689B, #F5F5F5, #08689B);
         background-image: -moz-linear-gradient(left, #08689B, #F5F5F5, #08689B);
         background-image: -ms-linear-gradient(left, #08689B, #F5F5F5, #08689B);
-        background-image: -o-linear-gradient(left, #08689B, #F5F5F5, #08689B); 
+        background-image: -o-linear-gradient(left, #08689B, #F5F5F5, #08689B);
     }
 
     .information {
@@ -177,5 +177,79 @@
     .hero-image img {
         width: 100%;
         height: auto;
+    }
+
+    /* DISCOVERY PAGE*/
+
+    .discovery-main {
+        display: grid;
+        grid-template-columns: 400px auto;
+        column-gap: 20px;
+        grid-auto-rows: auto;
+        grid-template-areas:
+            "sideBar welcome"
+            "sideBar gallery"
+            "sideBar gallery"
+            "sideBar gallery"
+            ".       gallery"
+            ".       gallery"
+            ".       gallery";
+    }
+
+    .sideBar {
+        grid-area: sideBar;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery {
+        grid-area: gallery;
+
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+
+    }
+
+    aside {
+        position: sticky;
+        top: 0;
+
+      }
+
+    .welcome {
+        grid-area: welcome;
+
+    }
+
+    .welcome p {
+        padding: 30px;
+    }
+
+    .sideBar-content1,
+    .sideBar-content2,
+    .sideBar-content3,
+    .sideBar-content4 {
+        margin: 10px;
+        padding: 1rem 1vw;
+        width: 350px;
+        height: 215px;
+        border: 1px solid black;
+    }
+
+    .gallery picture img {
+        margin: 0;
+        padding-bottom: 10px;
+        width: 800px;
+        height: 700px;
+        border: none;
+        box-shadow: none;
+    }
+
+    picture img:hover {
+        box-shadow: 0 0 50px #08689B;
     }
 }
