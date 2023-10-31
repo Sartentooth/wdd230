@@ -313,7 +313,7 @@ p.chamber {
     text-align: start;
 }
 
-.mapouter {
+/* .mapouter {
     margin-top: 30px;
     border: none;
     position: relative;
@@ -331,7 +331,7 @@ p.chamber {
     border: none;
     position: relative;
     z-index: 2
-}
+} */
 
 hr {
     display: none;
