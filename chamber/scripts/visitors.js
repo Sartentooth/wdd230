@@ -1,20 +1,45 @@
-// Initialize display element variable
+// variables to store elements
 const visitsDisplay = document.querySelector(".page-visitor");
+const today = document.querySelector(".today");
 
-// Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists.
-// If the numVisits KEY is missing, then assign 0 to the numVisits variable.
+// variables for Date Time Stamp
+const msToDays = 84600000;
+const theDateToday = new Date();
+const startVisitDay = theDateToday.getTime();
+
+// variables for localStorage
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+let startVisit = Number(window.localStorage.getItem("sTime") || startVisitDay);
 
-// Determine if this is the first visit or display the number of visits. 
-// We wrote this example backwards in order for you to think deeply about the logic.
+// calculate the interval between days related to user visits
+// TIP for testing purpose replace the code using this:
+// (Date.now() - startVisit + 99999999) / msToDays; (value for a day after)
+let dayBtw = (Date.now() - startVisit) / msToDays;
+
+// check if it is the first visit 
+// if it is false, display number of the visit
+// otherwise, display welcome message
 if (numVisits !== 0) {
+	
 	visitsDisplay.textContent = numVisits;
+	
+	// check if the visit is on the same day - if so, display one of three messages.
+	if (dayBtw > 0 && dayBtw < 1) {
+		today.textContent = "Back so soon! Awesome!";
+	} else {
+		if (dayBtw.toFixed(0) == 1) {
+			today.textContent = `You last visited ${dayBtw.toFixed(0)} day ago`;
+		} else {
+			today.textContent = `You last visited ${dayBtw.toFixed(0)} days ago`;
+		}
+	}
 } else {
-	visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+	today.textContent = `Welcome! Let us know if you have any questions`;
 }
 
-// increment the number of visits by one.
+// increase numVisits by 1 
 numVisits++;
 
-// store the new visit total into localStorage, key=numVisits-ls
+// store the new values for localStorage variables
 localStorage.setItem("numVisits-ls", numVisits);
+localStorage.setItem("sTime", startVisit);

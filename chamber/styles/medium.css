@@ -204,6 +204,10 @@
         justify-content: center;
         align-items: center;
     }
+    
+    .welcome {
+        grid-area: welcome;
+    }
 
     .gallery {
         grid-area: gallery;
@@ -211,19 +215,12 @@
         margin: 0;
         padding: 5px;
         text-align: center;
-
     }
-
+    
     aside {
         position: sticky;
         top: 0;
-
       }
-
-    .welcome {
-        grid-area: welcome;
-
-    }
 
     .welcome p {
         padding: 30px;
@@ -241,12 +238,16 @@
     }
 
     .gallery picture img {
-        margin: 0;
-        padding-bottom: 10px;
-        width: 800px;
-        height: 700px;
+        margin-bottom: 40px;
+        width: 400px;
+        height: 600px;
         border: none;
         box-shadow: none;
+    }
+
+    caption {
+        caption-side: bottom;
+        text-align: center;
     }
 
     picture img:hover {
