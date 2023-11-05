@@ -213,7 +213,7 @@
         grid-area: gallery;
 
         margin: 0;
-        padding: 0;
+        padding: 20px;
         text-align: center;
     }
     
@@ -221,23 +221,6 @@
         position: sticky;
         top: 0;
       }
-    
-    .welcome p {
-        padding: 30px;
-        margin-bottom: 50px;
-    }
-
-    .welcome h2 {
-        margin: 10px;
-        padding: 10px;
-        text-align: center;
-        color: #F5F5F5;
-        background: #08689B;
-    }
-
-    .page-visitor {
-        display: none;
-    }
 
     .sideBar-content1,
     .sideBar-content2,
@@ -245,31 +228,13 @@
     .sideBar-content4 {
         margin: 10px;
         padding: 1rem 1vw;
-        width: 350px;
-        height: 215px;
+        width: 400px;
+        height: auto;
         border: 1px solid black;
     }
 
-    .gallery h2 {
-        margin: 50px;
-        font-size: 2rem;
-    }
-
-    .gallery h2:hover {
-        color: #F5F5F5;
-        background: #08689B;
-    }
-
-    .gallery picture img {
-        
-        margin: 0;
-        width: 250px;
-        height: 300px;
-        border: none;
-        box-shadow: none;
-    }
-
-    picture img:hover {
+    figure img:hover {
+        padding: 5px;
         box-shadow: 0 0 50px #08689B;
     }
 }

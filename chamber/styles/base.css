@@ -100,9 +100,11 @@ a {
     color: var(--paragraph-color-on-color);
     text-decoration: none;
 }
+
 nav a.nav-link {
     padding: 20px;
 }
+
 nav a.nav-link:hover {
     color: var(--bgr-main-color);
     background-color: var(--navBar-hover-color);
@@ -132,6 +134,7 @@ nav a.nav-link:hover {
     height: 60px;
     background-color: var(--bgr-navBar-footer);
 }
+
 h1,
 h2 {
     margin: 0;
@@ -159,8 +162,7 @@ main {
 .spotlight-2,
 .spotlight-3,
 .events,
-.weather-info,
-picture>img {
+.weather-info {
     margin-bottom: 20px;
     width: 100%;
     height: 260px;
@@ -178,7 +180,7 @@ picture>img {
     border: 1px solid #1d3559;
     color: var(--paragraph-color-on-color);
     background: var(--bgr-main-color);
-    background: linear-gradient(180deg,rgb(29,53,89) 0%, rgb(86, 145, 200) 60%, rgb(121, 213, 9, .5) 90%);
+    background: linear-gradient(180deg, rgb(29, 53, 89) 0%, rgb(86, 145, 200) 60%, rgb(121, 213, 9, .5) 90%);
 }
 
 .title-msg p {
@@ -233,30 +235,30 @@ picture>img {
     justify-content: center;
     border: 1px solid var(--bgr-main-color);
     box-shadow: 0 4px 8px 0 #f5f5f5, 0 6px 10px 0 #454546;
-  }
+}
 
-  #temperature,
-  #wind-speed,
-  #wind-info {
+#temperature,
+#wind-speed,
+#wind-info {
     font-style: italic;
     color: var(--headline-color-on-white);
     font-weight: bold;
-  }
-  
-  .ingress {
+}
+
+.ingress {
     display: flex;
     flex-direction: row;
     gap: 10px;
     margin: 0 auto;
     padding: 10px;
-  }
-    
-  input {
-    width: 50px;
-  }
+}
 
-  /* end windchill*/
-  
+input {
+    width: 50px;
+}
+
+/* end windchill*/
+
 footer {
     display: flex;
     flex-direction: column;
@@ -313,7 +315,7 @@ p.chamber {
     text-align: start;
 }
 
-.mapouter iframe{
+.mapouter iframe {
     margin-top: 30px;
     border: none;
     position: relative;
@@ -369,9 +371,8 @@ hr {
 }
 
 /* discovery page*/
-.sideBar p{
-    text-align: justify;
-    padding: 10px;
+.page-visitor {
+    display: none;
 }
 
 .welcome h1 {
@@ -387,10 +388,130 @@ hr {
     text-align: justify;
 }
 
-picture>img {
-    cursor: pointer;
+.welcome p {
+    padding: 30px;
+    margin-bottom: 50px;
 }
 
-.gallery picture>img:hover {
-    color: burlywood;
+.welcome h2 {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #F5F5F5;
+    background: #08689B;
+}
+
+.sideBar p {
+    text-align: left;
+    padding: 10px;
+}
+
+.title {
+    font-weight: bold;
+    color: var(--paragraph-color-on-color);
+    background: var(--paragraph-color-on-white);
+}
+
+.more-info {
+    margin-top: 10px;
+    padding: 15px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.more-info a {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #1D3559;
+    color: var(--paragraph-color-on-color);
+    background: var(--bgr-navBar-footer);
+}
+
+.sideBar-content1,
+.sideBar-content2,
+.sideBar-content3,
+.sideBar-content4 {
+    height: auto;
+    border-bottom: 1px solid black;
+}
+
+.sideBar-content1 ul,
+.sideBar-content2 ul {
+    margin: 0;
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+.gallery {
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+    left: 0;
+    margin: 10px;
+    padding: 5px;
+}
+
+figure img {
+    max-width: 100%;
+    height: 300px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 #f5f5f5, 0 6px 10px 0 #454546;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.gallery h2 {
+    margin: 50px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.gallery h2:hover {
+    color: #F5F5F5;
+    background: #08689B;
+}
+
+.tftable {
+    font-size: 15px;
+    width: 100%;
+    border-width: 1px;
+    border-collapse: collapse;
+    border-color: #9dcc7a;
+    color: #012001;
+}
+
+.tftable ul {
+    list-style-type: none;    
+}
+
+.tftable th {
+    padding: 8px;
+    font-size: 15px;
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #9dcc7a;
+    background-color: #abd28e;
+}
+
+.tftable tr {
+    background-color: #bedda7;
+}
+
+.tftable td {
+    padding: 8px;
+    font-size: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #9dcc7a;
+}
+
+.tftable td img {
+    width: 16px;
+    height: auto;
 }
