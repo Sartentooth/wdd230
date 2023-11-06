@@ -113,16 +113,18 @@ a {
 
 .mapouter {
     grid-column: 1/3;
+}
+
+.mapouter iframe{
     position: relative;
+    width: 100%;
     height: 450px;
-    width: auto;
-    background: #fff;
 }
 
 .gmap_canvas {
     overflow: hidden;
-    height: 450px;
     width: auto;
+    height: 450px;
 }
 
 .gmap_canvas iframe {
