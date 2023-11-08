@@ -198,13 +198,13 @@
 
     .sideBar {
         grid-area: sideBar;
-        
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    
+
     .welcome {
         grid-area: welcome;
     }
@@ -216,11 +216,11 @@
         padding: 20px;
         text-align: center;
     }
-    
+
     aside {
         position: sticky;
         top: 0;
-      }
+    }
 
     .sideBar-content1,
     .sideBar-content2,
@@ -237,4 +237,31 @@
         padding: 5px;
         box-shadow: 0 0 50px #08689B;
     }
+}
+
+/*  JOIN PAGE    */
+.form-cont {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.level-benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+div.level-benefits {
+    display: block;
+}
+
+.level-benefits h2 {
+    text-align: center;
+}
+
+.level-benefits ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
