@@ -5,19 +5,59 @@
 
     --bg-color-input-valid: #76eb9d;
     --bg-color-input-invalid: #eb7676;
-    --bar-color-input-range: grey;
+    --bar-color-input-range: rgb(199, 199, 199);
 }
 
-main form {
+main {
+    grid-column: span 3;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: center;
     margin: 5px;
     padding: 5px;
-    width: 230px;
+    width: auto;
 }
+
 
 label {
     padding: 10px 0px 5px;
     font-weight: 600;
     font-family: var(--label-font);
+}
+
+input {
+    width: 230px;
+    font-family: var(--input-font);
+}
+
+#range, #rangevalues {
+    color: var(--bar-color-input-range);
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0;
+	width: 245px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+
+button {
+    margin-top: 50px;
+    width: 100px;
+    align-self: center;
+}
+
+#formmessage {
+    color: var(--bar-color-input-range);
+    font-family: var(--input-font);
 }
