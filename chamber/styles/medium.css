@@ -245,7 +245,7 @@
     justify-content: space-around;
 }
 
-.level-benefits {
+.level-benefits { 
     display: flex;
     flex-direction: column;
     align-items: start;

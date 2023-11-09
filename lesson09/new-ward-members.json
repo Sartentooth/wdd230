@@ -1,0 +1,38 @@
+{
+    "familyName": "Cascallares Family",
+    "movedIntoWard": 1985,
+    "numeberOfMember": 6,
+    "visitedByBishopric": true,
+    "members": [
+        {
+            "name": "Alfredo Mario Cascallares",
+            "Gender": "male",
+            "birthdate": "11 Jun 1947"
+        },
+        {
+            "name": "Teresa Cascallares",
+            "Gender": "female",
+            "birthdate": "30 Sep 1949"
+        },
+        {
+            "name": "Ariel Rodrigo Cascallares",
+            "Gender": "male",
+            "birthdate": "25 Oct 1976"
+        },
+        {
+            "name": "Gonzalo Sebastian Cascallares",
+            "Gender": "male",
+            "birthdate": "25 Apr 1978"
+        },
+        {
+            "name": "Daniel Ramiro Cascallares",
+            "Gender": "male",
+            "birthdate": "25 Jun 1980"
+        },
+        {
+            "name": "Diego Hernan Cascallares",
+            "Gender": "male",
+            "birthdate": "14 Mar 1985"
+        }
+    ]
+}
