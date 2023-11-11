@@ -1,0 +1,126 @@
+{
+  "lessons": [
+    {
+      "lesson": "01",
+      "link": [
+        {
+          "url": "lesson01/holygrail.html",
+          "title": "Holy Grial"
+        },
+        {
+          "url": "https://codepen.io/Sartentooth/pen/NWegBbX",
+          "title": "CodePen"
+        },
+        {
+          "url": "lesson01/media-query.html",
+          "title": "CSS Media Query"
+        }
+      ]
+    },
+    {
+      "lesson": "02",
+      "link": [
+        {
+          "url": "lesson02/design.html",
+          "title": "Web Design Principles"
+        },
+        {
+          "url": "lesson02/design-principles.html",
+          "title": "Design Principles Document"
+        }
+      ]
+    },
+    {
+      "lesson": "03",
+      "link": [
+        {
+          "url": "lesson03/images/css-combinator.jpg",
+          "title": "CSS Combinators"
+        },
+        {
+          "url": "https://codepen.io/Sartentooth/pen/bGOMBYa",
+          "title": "Pseudo-Elements"
+        },
+        {
+          "url": "https://codepen.io/Sartentooth/pen/wvRjgeR",
+          "title": "Responsive Menu"
+        },
+        {
+          "url": "lesson03/chamber-site-plan.html",
+          "title": "Chamber Site Plan"
+        }
+      ]
+    },
+    {
+      "lesson": "04",
+      "link": [
+        {
+          "url": "https://codepen.io/Sartentooth/pen/ExGdeOy",
+          "title": "CodePen"
+        },
+        {
+          "url": "chamber/index.html",
+          "title": "Chamber of Commerce"
+        }
+      ]
+    },
+    {
+      "lesson": "05",
+      "link": [
+        {
+          "url": "lesson05/bom.html",
+          "title": "DOM Manipulation"
+        }
+      ]
+    },
+    {
+      "lesson": "06",
+      "link": [
+        {
+          "url": "lesson06/images/landscape.webp",
+          "title": "Webp Image File Format"
+        }
+      ]
+    },
+    {
+      "lesson": "07",
+      "link": [
+        {
+          "url": "lesson03/lazyload.html",
+          "title": "Lazy Loading"
+        }
+      ]
+    },
+    {
+      "lesson": "08",
+      "link": [
+        {
+          "url": "form.html",
+          "title": "Form"
+        }
+      ]
+    },
+    {
+      "lesson": "09",
+      "link": [
+        {
+          "url": "lesson09/new-ward-members.json",
+          "title": "JSON File"
+        },
+        {
+          "url": "lesson09/prophets.html",
+          "title": "LDS Prophets"
+        }
+      ]
+    },
+    {
+      "lesson": "10",
+      "link": [
+        {
+          "url": "#",
+          "title": "unknow"
+        }
+      ]
+    }
+  ]
+}
