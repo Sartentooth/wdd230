@@ -1,0 +1,84 @@
+{
+  "companies": [
+    {
+      "company": "01",
+      "logo": "image/icon",
+      "name": "string",
+      "address": "string",
+      "phoneNumber": 12345678,
+      "membershipLevel": "string",
+      "joinSince": 1234
+,      "websiteURL": "url"
+    },
+    {
+      "company": "02",
+      "logo": "",
+      "name": "",
+      "address": "",
+      "phoneNumber": 0,
+      "membershipLevel": "",
+      "joinSince": 1234,
+      "websiteURL": ""
+    },
+    {
+      "company": "03",
+      "logo": "",
+      "name": "",
+      "address": "",
+      "phoneNumber": 0,
+      "membershipLevel": "",
+      "joinSince": 1234,
+      "websiteURL": ""
+    },
+    {
+      "company": "04",
+      "logo": "",
+      "name": "",
+      "address": "",
+      "phoneNumber": 0,
+      "membershipLevel": "",
+      "joinSince": 1234,
+      "websiteURL": ""
+    },
+    {
+      "company": "05",
+      "logo": "",
+      "name": "",
+      "address": "",
+      "phoneNumber": 0,
+      "membershipLevel": "",
+      "joinSince": 1234,
+      "websiteURL": ""
+    },
+    {
+      "company": "06",
+      "logo": "",
+      "name": "",
+      "address": "",
+      "phoneNumber": 0,
+      "membershipLevel": "",
+      "joinSince": 1234,
+      "websiteURL": ""
+    },
+    {
+      "company": "07",
+      "logo": "",
+      "name": "",
+      "address": "",
+      "phoneNumber": 0,
+      "membershipLevel": "",
+      "joinSince": 1234,
+      "websiteURL": ""
+    },
+    {
+      "company": "08",
+      "logo": "",
+      "name": "",
+      "address": "",
+      "phoneNumber": 0,
+      "membershipLevel": "",
+      "joinSince": 1234,
+      "websiteURL": ""
+    }
+  ]
+}
