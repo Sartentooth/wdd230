@@ -1,13 +1,15 @@
 
 const baseURL = "https://sartentooth.github.io/wdd230/";
-const linksURL = "https://sartentooth.github.io/wdd230/chamber/data/links.json";
+const linksURL = "https://sartentooth.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector(".grid");
 
 async function getCompanies() {
 	const response = await fetch(linksURL);
 	const data = await response.json();
-	displayCompanies(data.getCompanies);
+	displayCompanies(data.companies);
 }
+
+
 
 const displayCompanies = (companies) => {
 
@@ -21,8 +23,9 @@ const displayCompanies = (companies) => {
 		let level = document.createElement("p");
 
 		let url = document.createElement("a");
-		url.setAttribute("href", company.websiteURL);
+		url.setAttribute("href", "#");
 		url.setAttribute("target", "_blank");
+		url.textContent = `${company.websiteURL}`;
 
 		let logo = document.createElement("img");
 		logo.setAttribute("src", company.logo);
@@ -34,7 +37,7 @@ const displayCompanies = (companies) => {
 		name.textContent = `${company.name}`;
 		slogan.textContent = `${company.slogan}`;
 		address.textContent = `${company.address}`;
-		phone.textContent = `${company.phone}`;
+		phone.textContent = `${company.phoneNumber}`;
 		level.textContent = `${company.membershipLevel}`;
 
 		card.append(logo, name, slogan, address, phone, level, url);
@@ -43,17 +46,19 @@ const displayCompanies = (companies) => {
 	});
 }
 
+getCompanies();
+
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
 gridbutton.addEventListener("click", () => {
-	
+
 	display.classList.add("grid");
 	display.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); 
+listbutton.addEventListener("click", showList);
 
 function showList() {
 	display.classList.add("list");

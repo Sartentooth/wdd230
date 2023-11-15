@@ -265,3 +265,18 @@ div.level-benefits {
     padding: 0;
     list-style-type: none;
 }
+
+/* directory page*/
+
+.menu {
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+    align-items: center;
+}
+
+
