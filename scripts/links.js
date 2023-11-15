@@ -17,7 +17,7 @@ const displayLinks = (weeks) => {
     week.link.forEach((link, linkIndex) => {
       let linkElement = document.createElement("a");
       linkElement.setAttribute("href", link.url);
-      linkElement.setAttribute("target", "_blank")
+      linkElement.setAttribute("target", "_blank");
       
       if (linkIndex < week.link.length -1){
         linkElement.textContent = ` ${link.title} |`;
