@@ -2,7 +2,7 @@
   "companies": [
     {
       "company": "01",
-      "logo": "images/",
+      "logo": "images/companies-1.webp",
       "name": "Give",
       "slogan": "charity foundations",
       "address": "Domingo Olivera 1323, B1714 Ituzaingó",
@@ -12,7 +12,7 @@
     },
     {
       "company": "02",
-      "logo": "images/",
+      "logo": "images/companies-2.webp",
       "name": "Valentine",
       "slogan": "flower shop",
       "address": "Zufriategui 882, B1714 Ituzaingó",
@@ -22,7 +22,7 @@
     },
     {
       "company": "03",
-      "logo": "images/",
+      "logo": "images/companies-3.webp",
       "name": "Sushi",
       "slogan": "restaurant",
       "address": "Herzl 1814, B1714 Ituzaingó",
@@ -32,7 +32,7 @@
     },
     {
       "company": "04",
-      "logo": "images/",
+      "logo": "images/companies-4.webp",
       "name": "Axel",
       "slogan": "carpenters",
       "address": "Los Pozos 345, B1714 Ituzaingó",
@@ -42,7 +42,7 @@
     },
     {
       "company": "05",
-      "logo": "images/",
+      "logo": "images/companies-5.webp",
       "name": "Piper",
       "slogan": "plumbing",
       "address": "Zufriategui 405, B1714 Ituzaingó",
@@ -52,7 +52,7 @@
     },
     {
       "company": "06",
-      "logo": "images/",
+      "logo": "images/companies-6.webp",
       "name": "Brown & Smith",
       "slogan": "law office",
       "address": "Las Heras 123, B1714 Ituzaingó",
@@ -62,7 +62,7 @@
     },
     {
       "company": "07",
-      "logo": "images/",
+      "logo": "images/companies-7.webp",
       "name": "Caribbean",
       "slogan": "corner",
       "address": "Blas Parera 1267, B1714 Ituzaingó",
@@ -72,7 +72,7 @@
     },
     {
       "company": "08",
-      "logo": "images/",
+      "logo": "images/companies-8.webp",
       "name": "Project One",
       "slogan": "design",
       "address": "Medrano 378, B1714 Ituzaingó",
