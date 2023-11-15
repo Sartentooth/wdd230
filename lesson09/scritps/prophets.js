@@ -37,13 +37,13 @@ const displayProphets = (prophets) => {
         years.textContent = servedYears;
 
         portrait.setAttribute("src", prophet.imageurl);
-        portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`); // fill in the blank
+        portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '340');
         portrait.setAttribute('height', '440');
 
         // Append the section(card) with the created elements
-        card.append(fullName, birthdate, birthplace, numofchildren, death, order, years, portrait); //fill in the blank
+        card.append(fullName, birthdate, birthplace, numofchildren, death, order, years, portrait);
 
         cards.appendChild(card);
     });
