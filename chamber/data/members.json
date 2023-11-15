@@ -2,83 +2,83 @@
   "companies": [
     {
       "company": "01",
-      "logo": "image/icon",
-      "name": "string",
-      "address": "string",
-      "phoneNumber": 12345678,
-      "membershipLevel": "string",
-      "joinSince": 1234
-,      "websiteURL": "url"
+      "logo": "images/",
+      "name": "Give",
+      "slogan": "charity foundations",
+      "address": "Domingo Olivera 1323, B1714 Ituzaingó",
+      "phoneNumber": "(11) 2365-1773",
+      "membershipLevel": "Gold Membership",
+      "websiteURL": "www.givefoundation.com"
     },
     {
       "company": "02",
-      "logo": "",
-      "name": "",
-      "address": "",
-      "phoneNumber": 0,
-      "membershipLevel": "",
-      "joinSince": 1234,
-      "websiteURL": ""
+      "logo": "images/",
+      "name": "Valentine",
+      "slogan": "flower shop",
+      "address": "Zufriategui 882, B1714 Ituzaingó",
+      "phoneNumber": "(11) 4441-6021",
+      "membershipLevel": "Gold Membership",
+      "websiteURL": "www.valentineflowers.com"
     },
     {
       "company": "03",
-      "logo": "",
-      "name": "",
-      "address": "",
-      "phoneNumber": 0,
-      "membershipLevel": "",
-      "joinSince": 1234,
-      "websiteURL": ""
+      "logo": "images/",
+      "name": "Sushi",
+      "slogan": "restaurant",
+      "address": "Herzl 1814, B1714 Ituzaingó",
+      "phoneNumber": "(11) 4443-6526",
+      "membershipLevel": "Silver Membership",
+      "websiteURL": "www.sushi-ituzaingo.com"
     },
     {
       "company": "04",
-      "logo": "",
-      "name": "",
-      "address": "",
-      "phoneNumber": 0,
-      "membershipLevel": "",
-      "joinSince": 1234,
-      "websiteURL": ""
+      "logo": "images/",
+      "name": "Axel",
+      "slogan": "carpenters",
+      "address": "Los Pozos 345, B1714 Ituzaingó",
+      "phoneNumber": "(11) 5453-7586",
+      "membershipLevel": "Silver Membership",
+      "websiteURL": "www.axelcarpenters.com"
     },
     {
       "company": "05",
-      "logo": "",
-      "name": "",
-      "address": "",
-      "phoneNumber": 0,
-      "membershipLevel": "",
-      "joinSince": 1234,
-      "websiteURL": ""
+      "logo": "images/",
+      "name": "Piper",
+      "slogan": "plumbing",
+      "address": "Zufriategui 405, B1714 Ituzaingó",
+      "phoneNumber": "(11) 2433-8190",
+      "membershipLevel": "Silver Membership",
+      "websiteURL": "www.piperplumbing.com"
     },
     {
       "company": "06",
-      "logo": "",
-      "name": "",
-      "address": "",
-      "phoneNumber": 0,
-      "membershipLevel": "",
-      "joinSince": 1234,
-      "websiteURL": ""
+      "logo": "images/",
+      "name": "Brown & Smith",
+      "slogan": "law office",
+      "address": "Las Heras 123, B1714 Ituzaingó",
+      "phoneNumber": "(11) 4455-9200",
+      "membershipLevel": "Bronze Membership",
+      "websiteURL": "www.brownsmith.com"
     },
     {
       "company": "07",
-      "logo": "",
-      "name": "",
-      "address": "",
-      "phoneNumber": 0,
-      "membershipLevel": "",
-      "joinSince": 1234,
-      "websiteURL": ""
+      "logo": "images/",
+      "name": "Caribbean",
+      "slogan": "corner",
+      "address": "Blas Parera 1267, B1714 Ituzaingó",
+      "phoneNumber": "(11) 4454-5260",
+      "membershipLevel": "Bronze Membership",
+      "websiteURL": "www.caribbeancorner.com"
     },
     {
       "company": "08",
-      "logo": "",
-      "name": "",
-      "address": "",
-      "phoneNumber": 0,
-      "membershipLevel": "",
-      "joinSince": 1234,
-      "websiteURL": ""
+      "logo": "images/",
+      "name": "Project One",
+      "slogan": "design",
+      "address": "Medrano 378, B1714 Ituzaingó",
+      "phoneNumber": "(11) 4624-3269",
+      "membershipLevel": "NP Membership",
+      "websiteURL": "www.projectone.com"
     }
   ]
 }
