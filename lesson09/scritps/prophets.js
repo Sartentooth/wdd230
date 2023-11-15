@@ -15,9 +15,21 @@ const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
         let card = document.createElement("section");
         let fullName = document.createElement("h2");
+        let birthdate = document.createElement("p");
+        let birthplace = document.createElement("p");
+        let numofchildren = document.createElement("p");
+        let death = document.createElement("p");
+        let order = document.createElement("p");
+        let years = document.createElement("p");
         let portrait = document.createElement("img");
 
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+        birthdate.textContent = `was born on ${prophet.birthdate}`;
+        birthplace.textContent = `in the city of ${prophet.birthplace}`;
+        numofchildren.textContent = `he had ${prophet.numofchildren} childrens`;
+        death.textContent = `${(prophet.death == null) ? "alive" : "died, " + prophet.death}`; // check if the prophet is alive
+        order.textContent = `he was the ${prophet.order} prophet of the Church`;
+        years.textContent = `and served as a prophet for ${prophet.length} years`;
 
         portrait.setAttribute("src", prophet.imageurl);
         portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`); // fill in the blank
@@ -26,7 +38,7 @@ const displayProphets = (prophets) => {
         portrait.setAttribute('height', '440');
     
         // Append the section(card) with the created elements
-        card.append(fullName, portrait); //fill in the blank
+        card.append(fullName, birthdate, birthplace, numofchildren, death, order, years, portrait); //fill in the blank
       
         cards.appendChild(card);
     });
