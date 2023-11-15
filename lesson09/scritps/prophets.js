@@ -28,7 +28,7 @@ const displayProphets = (prophets) => {
         birthplace.textContent = `in the city of ${prophet.birthplace}`;
         numofchildren.textContent = `he had ${prophet.numofchildren} childrens`;
         death.textContent = `${(prophet.death == null) ? "alive" : "died, " + prophet.death}`; // check if the prophet is alive
-        order.textContent = `he was the ${prophet.order} prophet of the Church`;
+        order.textContent = `${(prophet.death == null) ? "he is the " + prophet.order : "he was the " + prophet.order}° prophet of the Church`;
         years.textContent = `and served as a prophet for ${prophet.length} years`;
 
         portrait.setAttribute("src", prophet.imageurl);
