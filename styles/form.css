@@ -50,10 +50,11 @@ input {
 }
 
 
-button {
+form button {
     margin-top: 50px;
-    width: 100px;
+    width: fit-content;
     align-self: center;
+    font-weight: 600;
 }
 
 #formmessage {
