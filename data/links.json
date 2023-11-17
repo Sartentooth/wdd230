@@ -117,8 +117,8 @@
       "lesson": "10",
       "link": [
         {
-          "url": "#",
-          "title": "unknow"
+          "url": "lesson10/weather.html",
+          "title": "API Weather Test"
         }
       ]
     }

@@ -4,8 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description"
-            content="WDD 230 - Web Frontend Development, Gonzalo Sebastian Cascallares, Form">
+        <meta name="description" content="WDD 230 - Web Frontend Development, Gonzalo Sebastian Cascallares, Form">
         <meta name="author" content="Gonzalo Sebastian Cascallares">
         <meta property="og:title" content="WDD230: Web Frontend Development">
         <meta property="og:type" content="website">
@@ -47,38 +46,45 @@
         </nav>
 
         <main>
-            
+
             <form action="record.html">
                 <div id="formmessage"></div>
 
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" required>
+                <label for="username">Username
+                    <input type="text" name="username" id="username" required>
+                </label>
 
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" pattern="[A-Za-z0-9]{8,12}" title="must be at least 8 characters and numbers" required>
+                <label for="password">Password
+                    <input type="password" name="password" id="password" pattern="[A-Za-z0-9]{8,12}"
+                        title="must be at least 8 characters and numbers" required>
+                </label>
 
-                <label for="password2">Password confirmation</label>
-                <input type="password" name="password2" id="password2" required>
+                <label for="password2">Password confirmation
+                    <input type="password" name="password2" id="password2" required>
+                </label>
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-                    title="Please, enter a valid email address">
+                <label for="email">Email
+                    <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                        title="Please, enter a valid email address">
+                </label>
 
-                <label for="range">Range</label>
-                <div class="rangevalue">1</div>
+                <label for="range">Range
+                    <div class="rangevalue">1</div>
                     <input type="range" name="range" id="range" min="1" max="10" value="1" step="1" list="rangevalues">
-                    <datalist id="rangevalues">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </datalist>
+                </label>
+                
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
                 <button type="submit">LET THE MAGIC HAPPEND - SEND ME</button>
             </form>
         </main>
