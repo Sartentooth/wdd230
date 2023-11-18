@@ -7,8 +7,7 @@ const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Sa
 // weather static for now.
 const current_day = weekday[date.getDay()];
 document.querySelector("#day-name").innerHTML = current_day;
-document.querySelector("#wind-info").innerHTML = "windy";
-document.querySelector("#temperature").innerHTML = "23°C";
+
 
 // Last Modified 
 document.querySelector("#year").innerHTML = year;
