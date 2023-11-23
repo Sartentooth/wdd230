@@ -5,7 +5,7 @@ const promoText = "🤝🏼 Come join us for the chamber meet and greet Wednesda
 const button = document.querySelector(".close");
 // by default only show on monday (1) tuesday (2) and wednesday (3).
 // for testing porpuse change the value to another number between 0 to 6 (getDay()).
-if (date.getDay() >= 1 && date.getDay() <= 4) {
+if (date.getDay() >= 1 && date.getDay() <= 3) {
 
     promo.innerHTML = promoText;
     promo.style.display = 'block';
