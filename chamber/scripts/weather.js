@@ -79,7 +79,7 @@ function displayForecastResults(data) {
     forecastIcon.setAttribute("src", iconsrc);
     forecastIcon.setAttribute("alt", "weather icon");
     forecastDesc.textContent = `${desc}`;
-    forecastDate.textContent = getWeekDay(data.list[4].dt_txt.slice(0, 10));
+    forecastDate.textContent = getWeekDay(data.list[4].dt);
 
     forecastTemp1.innerHTML = `${data.list[12].main.temp.toFixed(1)}&deg;C`;
     const iconsrc1 = `https://openweathermap.org/img/w/${data.list[12].weather[0].icon}.png`;
@@ -87,7 +87,7 @@ function displayForecastResults(data) {
     forecastIcon1.setAttribute("src", iconsrc1);
     forecastIcon1.setAttribute("alt", "weather icon");
     forecastDesc1.textContent = `${desc1}`;
-    forecastDate1.textContent = getWeekDay(data.list[12].dt_txt.slice(0, 10));
+    forecastDate1.textContent = getWeekDay(data.list[12].dt);
 
     forecastTemp2.innerHTML = `${data.list[20].main.temp.toFixed(1)}&deg;C`;
     const iconsrc2 = `https://openweathermap.org/img/w/${data.list[20].weather[0].icon}.png`;
@@ -95,11 +95,11 @@ function displayForecastResults(data) {
     forecastIcon2.setAttribute("src", iconsrc2);
     forecastIcon2.setAttribute("alt", "weather icon");
     forecastDesc2.textContent = `${desc2}`;
-    forecastDate2.textContent = getWeekDay(data.list[20].dt_txt.slice(0, 10));
+    forecastDate2.textContent = getWeekDay(data.list[20].dt);
 }
 
-function getWeekDay(day) {
-    const week = new Date(day);
+function getWeekDay(dt) {
+    const week = new Date(dt * 1000);
     const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     return current_day = weekday[week.getDay()];
 }
