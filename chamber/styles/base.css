@@ -712,7 +712,14 @@ section a:hover {
 }
 
 /*-----------------banner config-----------------*/
-div.promo p {
+.promo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo p {
     margin: 0vw;
     padding: 10px;
     text-align: center;
@@ -725,8 +732,13 @@ div.promo p {
     display: none;
 }
 
+.close {
+    color: var(--paragraph-color-on-color);
+    background-color: red;
+}
+
 /* Anitation provide by CodePen */
-.banner {
+.banner, .close {
     animation-name: parpadeo;
     animation-duration: 3s;
     animation-timing-function: linear;
