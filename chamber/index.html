@@ -60,7 +60,9 @@
                         <!-- <img class="hero" src="images/ituzaingo-hero.webp" alt="ituzaingo hero image"> -->
                     </picture>
                     <div class="stats">
-                        <a href="join.html"><p>Join Us</p></a>
+                        <a href="join.html">
+                            <p>Join Us</p>
+                        </a>
                     </div>
                 </div>
                 <div class="events">
@@ -68,14 +70,55 @@
                 </div>
                 <div class="weather-info">
                     <h2>WEATHER INFO</h2>
-                    <div class="ingress">
-                        <input type="number" name="temp" id="temp" value="50">
-                        <input type="number" name="wind" id="wind" value="5">
-                        <button class="btn">GO IT</button>
-                    </div>
-                    <p class="country">Buenos Aires, Argentina</p>
-                    <p>Temp: <span id="temperature"></span> - Wind: <span id="wind-speed"></span> - WindChill: <span
-                            id="wind-info"></span> </p>
+
+                    <h3 class="country">Ituzaingó, Buenos Aires, Argentina</h3>
+
+                    <figure id="weatherAPI">
+                        <span id="current-temp"></span>
+                        <img id="weather-icon" src="" alt="">
+                        <span id="weather-desc"></span>
+                    </figure>
+
+                    <h4>FORECAST 3-DAY</h4>
+                    <table class="tfforecast">
+                        <tr>
+                            <th><span class="day"></span></th>
+                            <th><span class="day1"></span></th>
+                            <th><span class="day2"></span></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <figure class="forecastAPI">
+                                    <span id="forecast-temp"></span>
+                                    <img id="forecast-icon" src="" alt="">
+                                </figure>
+                            </td>
+                            <td>
+                                <figure class="forecastAPI">
+                                    <span id="forecast-temp1"></span>
+                                    <img id="forecast-icon1" src="" alt="">
+                                </figure>
+                            </td>
+                            <td>
+                                <figure class="forecastAPI">
+                                    <span id="forecast-temp2"></span>
+                                    <img id="forecast-icon2" src="" alt="">
+                                </figure>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span id="forecast-desc"></span>
+                            </td>
+                            <td>
+                                <span id="forecast-desc1"></span>
+                            </td>
+                            <td>
+                                <span id="forecast-desc2"></span>
+                            </td>
+                        </tr>
+                    </table>
+
                 </div>
                 <div class="spotlight-1">
                     <h2>SPOT 1</h2>
@@ -131,7 +174,7 @@
 
         <script src="scripts/getdates.js"></script>
         <script src="scripts/buttons.js"></script>
-        <script src="scripts/windchill.js"></script>
+        <script src="scripts/weather.js"></script>
     </body>
 
 </html>
