@@ -559,8 +559,8 @@ figure {
     margin: 10px 0 20px;
     text-align: center;
     font-weight: bold;
-    color: var(--bgr-body-color);
-    text-shadow: 2px 2px 10px var(--bgr-header-color);
+    color: var(--headline-color-on-white);
+    text-shadow: 2px 2px 10px var(--bgr-navBar-footer);
 }
 
 .welcome-text,
@@ -612,22 +612,47 @@ figure {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
   }
   
+  .membership-card h3 {
+    font-size: 1.1rem;
+  }
+
   .np-membership {
+
     border: 2px solid #3498db; 
   }
-  
+
+  .np-membership h3 {
+    padding: 30px;
+    background: #3498db;
+  }
+
   .bronze-membership {
     border: 2px solid #e67e22; 
   }
   
+  .bronze-membership h3 {
+    padding: 30px;
+    background: #e67e22;
+  }
+
   .silver-membership {
     border: 2px solid #95a5a6; 
   }
   
+  .silver-membership h3 {
+    padding: 30px;
+    background: #95a5a6;
+  }
+
   .gold-membership {
     border: 2px solid #f1c40f;
   }
     
+  .gold-membership h3 {
+    padding: 30px;
+    background: #f1c40f;
+  }
+
   .membership-card ul {
     list-style-type: none;
     padding: 0;
@@ -701,6 +726,10 @@ textarea {
     background: var(--bgr-main-color);
 }
 
+.form img {
+    margin-top: 20px;
+}
+
 .buttons {
     display: flex;
     flex-direction: row;
@@ -741,7 +770,6 @@ input:valid {
 }
 
 /*  DIRECTORY PAGE */
-
 .menu {
     margin: 0 50px 20px;
     padding: 20px;

@@ -1,30 +1,23 @@
 // Variables
-let errorMessage;
+let errorMessage = document.querySelector("#error-message");
+const tagName = document.querySelector("input");
 const form = document.querySelector("form");
-const firstNameInput = document.querySelector("#first-name");
-const lastNameInput = document.querySelector("#last-name");
-const titleInput = document.querySelector("#title");
-const emailInput = document.querySelector("#mail");
-const phoneNumberInput = document.querySelector("#mobile-number");
 
 // call to event listener and function
 form.addEventListener("focusout", (event) => {
     const element = event.target;
 
-    if (element.tagName === "input") {
+    if (element.tagName.toLowerCase() === "input") {
         validateInputs(element);
     }
 });
 
-
 function validateInputs(element) {
-
-    errorMessage = document.querySelector("#error-message");
 
     const pattern = element.pattern;
     const userInput = element.value;
     const regex = new RegExp(pattern);
-
+    
     if (regex.test(userInput)) {
         element.style.background = "var(--bg-color-input-valid)";
         errorMessage.innerText = "";
@@ -35,4 +28,9 @@ function validateInputs(element) {
     }
 }
 
-
+form.addEventListener("submit", (event) => {
+    const timeStampInput = document.querySelector("#dtime");
+    const timeStamp = Date.now();
+    timeStampInput.value = timeStamp;
+    console.log("Timestamp:", timeStamp); // for testing purpose
+});
