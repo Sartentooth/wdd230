@@ -20,10 +20,15 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
+
+
 modeButton.addEventListener("click", () => {
+	const isJoinPage = window.location.href.includes("join.html")
+
 	if (modeButton.textContent.includes("🌒 Dark mode")) {
 		body.style.background = "#282829";
 		body.style.border = "none";
+		body.style.color = "#f5f5f5";
 		header.style.background = "#191919";
 		nav.style.background = "#424242";
 		main.style.background = "#191919";
@@ -33,22 +38,25 @@ modeButton.addEventListener("click", () => {
 		footer.style.color = "#F5F5F5";
 		hr.style.backgroundImage = "-webkit-linear-gradient(left, #424242, #F5F5F5, #424242)";
 		hamBox.style.background = "#424242";
-		nextStep.style.background = "#424242";
-		community.style.background = "#424242";
-		chamberNameNext.style.color = "var(--navBar-hover-color)";
-		chamberNameNext.style.fontWeight = "bold";
 		modeButton.textContent = "🌘 Light mode";
 
-		strong.forEach(span => {
-			span.style.color = "var(--navBar-hover-color)";
-			span.style.fontWeight = "bold";
-		});
+		if (isJoinPage) {
+			nextStep.style.background = "#424242";
+			community.style.background = "#424242";
+			chamberNameNext.style.color = "var(--navBar-hover-color)";
+			chamberNameNext.style.fontWeight = "bold";
 
-		chamberName.forEach(span => {
-			span.style.color = "var(--navBar-hover-color)";
-			span.style.fontWeight = "bold";
-		});
+			strong.forEach(span => {
+				span.style.color = "var(--navBar-hover-color)";
+				span.style.fontWeight = "bold";
+			});
 
+			chamberName.forEach(span => {
+				span.style.color = "var(--navBar-hover-color)";
+				span.style.fontWeight = "bold";
+
+			});
+		}
 	} else {
 		body.style.background = "#F5F5F5";
 		body.style.border = "none";
@@ -61,20 +69,23 @@ modeButton.addEventListener("click", () => {
 		footer.style.color = "#F5F5F5";
 		hr.style.backgroundImage = "-webkit-linear-gradient(left, #08689B, #F5F5F5, #08689B)";
 		hamBox.style.background = "#08689B";
-		nextStep.style.background = "#08689B";
-		community.style.background = "#08689B";
-		chamberNameNext.style.color = "#F5F5F5";
-		chamberNameNext.style.fontWeight = "bold";
 		modeButton.textContent = "🌒 Dark mode";
 
-		strong.forEach(span => {
-			span.style.color = "#08689B";
-			span.style.fontWeight = "bold";
-		});
+		if (isJoinPage) {
+			nextStep.style.background = "#08689B";
+			community.style.background = "#08689B";
+			chamberNameNext.style.color = "#F5F5F5";
+			chamberNameNext.style.fontWeight = "bold";
 
-		chamberName.forEach(span => {
-			span.style.color = "#08689B";
-			span.style.fontWeight = "bold";
-		});
+			strong.forEach(span => {
+				span.style.color = "#08689B";
+				span.style.fontWeight = "bold";
+			});
+
+			chamberName.forEach(span => {
+				span.style.color = "#08689B";
+				span.style.fontWeight = "bold";
+			});
+		}
 	}
 });

@@ -610,64 +610,64 @@ figure {
     font-size: 16px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
-  }
-  
-  .membership-card h3 {
+}
+
+.membership-card h3 {
     font-size: 1.1rem;
-  }
+}
 
-  .np-membership {
+.np-membership {
 
-    border: 2px solid #3498db; 
-  }
+    border: 2px solid #3498db;
+}
 
-  .np-membership h3 {
+.np-membership h3 {
     padding: 30px;
     background: #3498db;
-  }
+}
 
-  .bronze-membership {
-    border: 2px solid #e67e22; 
-  }
-  
-  .bronze-membership h3 {
+.bronze-membership {
+    border: 2px solid #e67e22;
+}
+
+.bronze-membership h3 {
     padding: 30px;
     background: #e67e22;
-  }
+}
 
-  .silver-membership {
-    border: 2px solid #95a5a6; 
-  }
-  
-  .silver-membership h3 {
+.silver-membership {
+    border: 2px solid #95a5a6;
+}
+
+.silver-membership h3 {
     padding: 30px;
     background: #95a5a6;
-  }
+}
 
-  .gold-membership {
+.gold-membership {
     border: 2px solid #f1c40f;
-  }
-    
-  .gold-membership h3 {
+}
+
+.gold-membership h3 {
     padding: 30px;
     background: #f1c40f;
-  }
+}
 
-  .membership-card ul {
+.membership-card ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  .membership-card ul li {
+}
+
+.membership-card ul li {
     margin-bottom: 10px;
-  }
-  
-  .membership-card .price {
+}
+
+.membership-card .price {
     margin-top: 15px;
     font-size: 18px;
     color: var(--bgr-navBar-footer);
     font-weight: bold;
-  }
+}
 
 .form-cont {
     display: flex;
@@ -785,7 +785,10 @@ input:valid {
 section {
     padding: 5px;
     text-align: justify;
+    border: 2px solid var(--bgr-header-color);
+    border-radius: 8px;
     box-shadow: 0 4px 8px 0 #f5f5f5, 0 6px 10px 0 #454546;
+
 }
 
 .grid {
@@ -827,14 +830,18 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 30px;
 }
 
 .list section {
     display: grid;
     grid-template-columns: 1fr;
     margin: 0;
+    width: 70%;
+    gap: 10px;
     padding: 5px;
-    width: 300px;
 }
 
 
@@ -846,13 +853,13 @@ section {
     margin: 2px;
 }
 
-.list section:nth-child(even) {
-    background-color: #deffce;
+/* .list section:nth-child(even) {
+    background-color: var(--bgr-body-color);
 }
 
 .list section:nth-child(odd) {
-    background-color: #bfe7bb;
-}
+    background-color: var(--bgr-body-color);
+} */
 
 section p {
     font-variant: small-caps;
@@ -951,6 +958,34 @@ section a:hover {
     }
 }
 
-/* End Anitation provide by CodePen */
+/* THANK YOU PAGE*/
 
-/*-----------------End banner config-----------------*/
+.thank-you-message {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.349);
+}
+
+.thank-you-message h1 {
+    padding: 50px 10px;
+    text-align: start;
+    color: var(--paragraph-color-on-color);
+    background: var(--bgr-navBar-footer);
+}
+
+.close-auto {
+    text-align: center;
+    font-size: smaller;
+}
+
+.cname {
+    padding: 20px 10px 20px 0;
+    text-align: right;
+    font-size: 1.2rem;
+    color: var(--bgr-navBar-footer);
+    background: var(--navBar-hover-color);
+}
