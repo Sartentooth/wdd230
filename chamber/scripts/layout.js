@@ -9,8 +9,6 @@ async function getCompanies() {
 	displayCompanies(data.companies);
 }
 
-
-
 const displayCompanies = (companies) => {
 
 	companies.forEach((company) => {

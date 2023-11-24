@@ -240,16 +240,113 @@
 }
 
 /*  JOIN PAGE    */
+
+#join-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: auto;
+    grid-template-areas:
+        ". why-join-us why-join-us ."
+        "welcome-text welcome-text form-cont form-cont"
+        "welcome-text welcome-text form-cont form-cont"
+        "join-us join-us form-cont form-cont"
+        "strategic-partner strategic-partner form-cont form-cont"
+        "next-step community form-cont form-cont"
+        "np-membership bronze-membership silver-membership gold-membership";
+}
+
+form img {
+    margin-top: 50px;
+}
+
+#why-join-us {
+    grid-area: why-join-us;
+    text-align: center;
+}
+
+.welcome-text {
+    grid-area: welcome-text;
+    padding: 40px 10px 20px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.join-us {
+    grid-area: join-us;
+    padding: 40px 10px 20px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.strategic-partner {
+    grid-area: strategic-partner;
+    padding: 40px 10px 20px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.next-step {
+    grid-area: next-step;
+    padding: 20px 10px 20px;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.community {
+    grid-area: community;
+    padding: 20px 10px 20px;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.membership-card,
+.membership-card h3 {
+    padding: 20px 10px 20px;
+    line-height: 1;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.membership-card ul {
+    margin: 5px auto;
+    padding-left: 20px;
+    list-style: circle;
+    text-align: left;
+}
+.np-membership {
+    grid-area: np-membership;
+    text-align: center;
+}
+
+.bronze-membership {
+    grid-area: bronze-membership;
+    text-align: center;
+}
+
+.silver-membership {
+    grid-area: silver-membership;
+    text-align: center;
+}
+
+.gold-membership {
+    grid-area: gold-membership;
+    text-align: center;
+}
+
 .form-cont {
-    flex-direction: row;
-    justify-content: space-around;
+    grid-area: form-cont;
 }
 
 .level-benefits {
     display: flex;
     flex-direction: column;
     align-items: start;
-
 }
 
 div.level-benefits {
