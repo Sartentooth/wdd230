@@ -40,6 +40,7 @@ if (numVisits !== 0) {
 // increase numVisits by 1 
 numVisits++;
 
+startVisit = Date.now();
 // store the new values for localStorage variables
 localStorage.setItem("numVisits-ls", numVisits);
 localStorage.setItem("sTime", startVisit);
