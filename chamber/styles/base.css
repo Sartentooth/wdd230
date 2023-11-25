@@ -178,7 +178,7 @@ main {
 .events,
 .weather-info {
     margin-bottom: 20px;
-    width: 100%;
+    width: auto;
     height: 260px;
     text-align: center;
     border: 2px solid var(--headline-color-on-white);
@@ -209,16 +209,19 @@ main {
 
 .spotlight-1 {
     border: 2px solid #f1c40f;
+    background-position-x: center;
     background-image: url(https://sartentooth.github.io/wdd230/chamber/images/spot-caribbean.webp);
 }
 
 .spotlight-2 {
     border: 2px solid #f1c40f;
+    background-position-x: center;
     background-image: url(https://sartentooth.github.io/wdd230/chamber/images/spot-give.webp);
 }
 
 .spotlight-3 {    
     border: 2px solid #f1c40f;
+    background-position-x: center;
     background-image: url(https://sartentooth.github.io/wdd230/chamber/images/spot-valentine.webp);
 }
 
@@ -839,6 +842,9 @@ input:valid {
 }
 
 .events {
+    background-position-x: center;
+    background-repeat:repeat-x;
+    background-color: #A3DCF8;
     background-image: url(https://sartentooth.github.io/wdd230/chamber/images/bg-events.webp);
 }
 
