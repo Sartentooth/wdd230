@@ -185,8 +185,6 @@ main {
     box-shadow: 0 4px 8px 0 #f5f5f5, 0 6px 10px 0 #454546;
 }
 
-
-
 .spotlight-1 p,
 .spotlight-2 p,
 .spotlight-3 p {
@@ -825,17 +823,27 @@ input:valid {
     border: 2px solid var(--bgr-header-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 #f5f5f5, 0 6px 10px 0 #454546;
-
 }
 
-.grid {
+.events section {
+    padding: 5px;
+    text-align: justify;
+}
+
+.grid,
+.events {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 5px;
     align-items: center;
 }
 
-.grid section {
+.events {
+    background-image: url(/chamber/images/bg-events.webp);
+}
+
+.grid section,
+.events section {
     margin-top: 20px;
     text-align: center;
 }
@@ -845,19 +853,22 @@ input:valid {
     box-shadow: 0 0 10px #333;
 }
 
-.grid section>* {
+.grid section>*,
+.events section>* {
     margin: 10px;
 }
 
 .grid h2,
-.list h2 {
+.list h2,
+.events h2 {
     font-stretch: condensed;
     font-size: 20px;
     font-family: var(--heading-font);
 }
 
 .grid h3,
-.list h3 {
+.list h3,
+.events h3 {
     font-variant: small-caps;
     font-size: 15px;
     font-family: var(--heading-font);

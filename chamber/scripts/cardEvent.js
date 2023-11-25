@@ -6,42 +6,28 @@ const cardEvent = document.querySelector(".events");
 async function getCompanies() {
 	const response = await fetch(linksURL);
 	const data = await response.json();
-	displayCompany(data.companies);
+	displayCompany(data.events);
 }
 
-const displayCompany = (companies) => {
+const displayCompany = (events) => {
 
-	let company = companies[Math.floor(Math.random() * companies.length)];
+	let event = events[Math.floor(Math.random() * events.length)];
 
-	console.log(company);
+	console.log(event);
 
-	let card = document.createElement("section");
-	let name = document.createElement("h2");
-	let slogan = document.createElement("h3");
-	let address = document.createElement("p");
-	let phone = document.createElement("p");
-	let level = document.createElement("p");
-
-	let url = document.createElement("a");
-	url.setAttribute("href", "#");
-	url.setAttribute("target", "_blank");
-	url.textContent = `${company.websiteURL}`;
-
-	let logo = document.createElement("img");
-	logo.setAttribute("src", company.logo);
-	logo.setAttribute("alt", `logo of ${company.name}`);
-	logo.setAttribute("loading", "lazy");
-	logo.setAttribute("width", "100");
-	logo.setAttribute("height", "100");
-
-	name.textContent = `${company.name}`;
-	slogan.textContent = `${company.slogan}`;
-	address.textContent = `${company.address}`;
-	phone.textContent = `${company.phoneNumber}`;
-	level.textContent = `${company.membershipLevel}`;
-
-	card.append(logo, name, slogan, address, phone, level, url);
-	cardEvent.appendChild(card);
+    let card = document.createElement("section");
+    let eventName = document.createElement("h2");
+    let eventSlogan = document.createElement("h3");
+    let eventAddress = document.createElement("p");
+    let eventPhone = document.createElement("p");
+  
+    eventName.textContent = event.name;
+    eventSlogan.textContent = event.slogan;
+    eventAddress.textContent = event.address;
+    eventPhone.textContent = event.phoneNumber;
+  
+    card.append(eventName, eventSlogan, eventAddress, eventPhone);
+    cardEvent.appendChild(card);
 }
 
 getCompanies();
