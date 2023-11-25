@@ -209,17 +209,17 @@ main {
 
 .spotlight-1 {
     border: 2px solid #f1c40f;
-    background-image: url(/chamber/images/spot-caribbean.webp);
+    background-image: url(https://sartentooth.github.io/wdd230/chamber/images/spot-caribbean.webp);
 }
 
 .spotlight-2 {
     border: 2px solid #f1c40f;
-    background-image: url(/chamber/images/spot-give.webp);
+    background-image: url(https://sartentooth.github.io/wdd230/chamber/images/spot-give.webp);
 }
 
 .spotlight-3 {    
     border: 2px solid #f1c40f;
-    background-image: url(/chamber/images/spot-valentine.webp);
+    background-image: url(https://sartentooth.github.io/wdd230/chamber/images/spot-valentine.webp);
 }
 
 .title-msg {
