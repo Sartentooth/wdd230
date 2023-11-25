@@ -843,8 +843,6 @@ input:valid {
 
 .events {
     background-position-x: center;
-    background-repeat:repeat-x;
-    background-color: #A3DCF8;
     background-image: url(https://sartentooth.github.io/wdd230/chamber/images/bg-events.webp);
 }
 
