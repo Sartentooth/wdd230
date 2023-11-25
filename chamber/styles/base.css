@@ -839,7 +839,7 @@ input:valid {
 }
 
 .events {
-    background-image: url(images/bg-events.webp);
+    background-image: url(../chamber/images/bg-events.webp);
 }
 
 .grid section,
