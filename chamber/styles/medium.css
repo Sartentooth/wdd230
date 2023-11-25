@@ -49,8 +49,8 @@
         grid-template-areas:
             "title-msg  title-msg"
             "hero-image hero-image"
-            "events     spotlight-1"
-            "weather    spotlight-2"
+            "events     weather"
+            "spotlight-1 spotlight-2"
             "spotlight-3 .";
     }
 

@@ -1,0 +1,32 @@
+{
+  "events": [
+    {
+      "event": "01",
+      "name": "Business Networking Mixer",
+      "slogan": "Connect and Grow Together!",
+      "address": "Domingo Olivera 1323, B1714 Ituzaingó",
+      "phoneNumber": "(11) 2365-1773"
+    },
+    {
+      "event": "02",
+      "name": "Commerce Summit 2023",
+      "slogan": "Navigating the Future of Commerce",
+      "address": "Calle Ejemplo 456, Ciudad Ejemplo",
+      "phoneNumber": "(22) 9876-5432"
+    },
+    {
+      "event": "03",
+      "name": "Community Outreach Day",
+      "slogan": "Building Bridges, Creating Opportunities",
+      "address": "Avenida Principal 789, Pueblo Nuevo",
+      "phoneNumber": "(33) 1234-5678"
+    },
+    {
+      "event": "04",
+      "name": "Chamber of Commerce Family Picnic",
+      "slogan": "Fun, Food, and Friendship",
+      "address": "Calle Principal 321, Villa Ejemplo",
+      "phoneNumber": "(44) 8765-4321"
+    }
+  ]
+}

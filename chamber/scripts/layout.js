@@ -40,7 +40,6 @@ const displayCompanies = (companies) => {
 
 		card.append(logo, name, slogan, address, phone, level, url);
 		cards.appendChild(card);
-
 	});
 }
 
