@@ -842,8 +842,8 @@ input:valid {
 }
 
 .events {
-    background-position-x: center;
-    background-image: url(https://sartentooth.github.io/wdd230/chamber/images/bg-events.webp);
+    background: var(--bgr-navBar-footer);
+    background: linear-gradient(180deg, rgba(8, 104, 155, 0.356), rgba(28, 126, 115, 0.63) 100%);
 }
 
 .grid section,

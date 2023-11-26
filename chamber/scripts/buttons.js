@@ -23,7 +23,8 @@ hamButton.addEventListener('click', () => {
 
 
 modeButton.addEventListener("click", () => {
-	const isJoinPage = window.location.href.includes("join.html")
+
+	const isJoinPage = window.location.href.includes("join.html");
 
 	if (modeButton.textContent.includes("🌒 Dark mode")) {
 		body.style.background = "#282829";
