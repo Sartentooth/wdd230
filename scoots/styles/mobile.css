@@ -149,8 +149,22 @@ h1 {
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
   padding: 15px;
+  text-decoration: none;
+  text-align: center;
   border: 2px solid whitesmoke;
   border-radius: 8px;
+  background:  rgba(107, 102, 107, 0.502);
+  
+}
+
+.hero a:hover {
+  color: var(--bg-color-body);
+  animation: mylastmove 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes mylastmove {
+  from {background: var(--bg-color-body);}
+  to {background: whitesmoke;}
 }
