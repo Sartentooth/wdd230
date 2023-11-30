@@ -1,0 +1,54 @@
+@media only screen and (min-width: 481px) {
+  
+  /*  NAVBAR CONFIG  */
+  .menu {
+    justify-content: center;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .tg {
+    flex: 1;
+    text-align: right;
+  }
+
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+
+  .toggle {
+    order: 2;
+  }
+
+  .button.signin {
+    border: 0;
+  }
+
+  .button a {
+    padding: 7.5px 15px;
+    background: teal;
+    border: 1px #006d6d solid;
+  }
+
+  .button.signin a {
+    background: transparent;
+  }
+
+  .button a:hover {
+    text-decoration: none;
+  }
+
+  .button.login a:hover {
+    background: #006d6d;
+    border-color: #005959;
+  }
+
+  .button.secondary a:hover {
+    color: #ddd;
+  }
+  /*  END NAVBAR CONFIG  */
+}

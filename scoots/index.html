@@ -1,27 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Scoots Home Page</title>
-    </head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description"
+			content="WDD 230 - Web Frontend Development, Gonzalo Sebastian Cascallares, Final Project: Scoots Rental">
+		<meta name="author" content="Gonzalo Sebastian Cascallares">
+		<meta property="og:title" content="Scoots Motorcycle & Car Rentals">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="images/meta-og-image.webp">
+		<meta property="og:image:width" content="1200px">
+		<meta property="og:image:height" content="630px">
+		<meta property="og:url" content="https://sartentooth.github.io/wdd230/scoots/index.html">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<title>Scoots Motorcycle & Car Rental</title>
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/mobile.css">
+		<link rel="stylesheet" href="styles/tablet.css">
+		<link rel="stylesheet" href="styles/desktop.css">
+	</head>
 
-    <body>
+	<body>
 
-        <header>
+		<div class="promo">
+			<button class="close">❌</button>
+			<p class="banner text"></p>
+		</div>
 
-        </header>
+		<header>
+			<nav>
+				<ul class="menu">
+					<li class="logo"><a href="index.html">SCOOTS</a></li>
+					<li class="item"><a href="index.html">Home</a></li>
+					<li class="item"><a href="rentals.html">Rentals</a></li>
+					<li class="item"><a href="reservations.html">Reservartions</a></li>
+					<li class="item"><a href="contac.html">Contac</a></li>
+					<li class="item button login"><a href="form-login.html">Log In</a></li>
+					<li class="item button signin"><a href="form-signin.html">Sign Up</a></li>
+					<li class="tg"><button class="toggle"></button></li>
+				</ul>
+			</nav>
+		</header>
+		<hr>
+		<main>
 
-        <main>
+			<div class="hero container">
+				<h1>WELCOME TO COZUMEL SCOOTS!!</h1>
+				<picture>
+					<source media="(max-width: 480px)" srcset="images/hero-mobile.webp">
+					<source media="(max-width: 1024px)" srcset="images/hero-tablet.webp">
+					<img class="hero" src="images/hero-desktop.webp" alt="large hero image" width="1280" height="640" loading="eager">
+				</picture>
+				<a class="hero-button" href="reservations.html">RESERVE TODAY</a>
+			</div>
 
-        </main>
+		</main>
 
-        <footer>
+		<footer>
 
-        </footer>
+		</footer>
 
-        <script src="scripts/#"></script>
-    </body>
+		<script src="scripts/toggle.js"></script>
+	</body>
 
 </html>

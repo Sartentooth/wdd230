@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+@import url("https://use.typekit.net/nzx7orx.css");
+
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+:root {
+  --bg-color-body: rgb(107, 100, 107);
+  --txt-align-center: center;
+
+  --font-logo: "hey-eloise-watercolor", sans-serif;
+  --font-text: "Quicksand", sans-serif;
+}
+
+body {
+  font-family: var(--font-text);
+  background: var(--bg-color-body);
+}
+
+/*  NAV BAR CONFIG  */
+
+nav {
+  background: #222;
+  padding: 5px 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+.menu li {
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+
+.logo a {
+  font-family: var(--font-logo);
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.button.signin {
+  border-bottom: 1px #444 solid;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tg {
+  order: 1;
+}
+
+.item.button {
+  order: 2;
+}
+
+/**HAMBURGER CONFIG**/
+
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+
+.item.open {
+  display: block;
+  width: 100%;
+}
+
+.item.open a {
+  display: block;
+}
+
+.toggle::before {
+  content: '☰';
+}
+
+.toggle.open::before {
+  content: '✖';
+}
+
+.toggle {
+  font-size: 1.2rem;
+  width: 30px;
+  height: 30px;
+}
+
+/* END NAVBAR CONFIG  */
+
+/* MAIN HERO IMG CONFIG  */
+h1 {
+  text-align: var(--txt-align-center);
+}
+
+.hero.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero a {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 15px;
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+}
