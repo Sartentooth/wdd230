@@ -68,7 +68,7 @@ h3 {
   font-size: var(--h3--header-font-size);
 }
 
-picture hr {
+.hr-line {
   margin-top: -6px;
 }
 
@@ -125,11 +125,6 @@ a.orange:hover {
 .logo img {
   width: 100px;
   height: auto;
-}
-
-.logo a {
-  font-family: var(--font-logo-h1);
-  font-size: 40px;
 }
 
 .menu li {
@@ -218,7 +213,6 @@ a.orange:hover {
   padding: 15px;
   text-decoration: none;
   text-align: center;
-  font-family: var(--font-text-navbar);
   border: 2px solid var(--br-color-a);
   border-radius: 8px;
   background: var(--br-color-button-a);
@@ -235,7 +229,7 @@ a.orange:hover {
 
 /*  Section CARD INFORMATION*/
 .title,
-.subtitle.facilities {
+.subtitle.slogan {
   text-align: center;
 }
 
