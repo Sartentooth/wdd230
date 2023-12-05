@@ -1,5 +1,5 @@
-@media only screen and (min-width: 481px) {
-  
+@media only screen and (min-width: 580px) {
+
   /*  NAVBAR CONFIG  */
   .menu {
     justify-content: center;
@@ -7,6 +7,14 @@
 
   .logo {
     flex: 1;
+  }
+
+  .logo a img {
+    display: none;
+  }
+
+  .logo a::before {
+    content: "SCOOTS";
   }
 
   .tg {
@@ -30,25 +38,61 @@
 
   .button a {
     padding: 7.5px 15px;
-    background: teal;
-    border: 1px #006d6d solid;
-  }
-
-  .button.signin a {
-    background: transparent;
+    font-weight: bold;
+    color: #343234;
+    border: 1px whitesmoke solid;
+    background: #dfc681;
   }
 
   .button a:hover {
     text-decoration: none;
   }
 
-  .button.login a:hover {
-    background: #006d6d;
-    border-color: #005959;
+  .button.signin:hover,
+  .button.login:hover {
+    text-decoration: none;
+    text-decoration-thickness: none;
   }
 
-  .button.secondary a:hover {
-    color: #ddd;
+  .button.login a:hover,
+  .button.signin a:hover {
+    color: var(--bg-color-body);
+    background: var(--font-color-text);
   }
+
   /*  END NAVBAR CONFIG  */
+
+  /*  HERO BUTTON  */
+  .hero a:hover {
+    color: var(--font-color-text);
+    animation: mylastmove 0.5s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes mylastmove {
+    from {
+      background: var(--bg-color-body);
+    }
+
+    to {
+      background: whitesmoke;
+    }
+  }
+
+  .hero a {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero img.logo {
+    display: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
 }

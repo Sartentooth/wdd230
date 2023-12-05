@@ -11,30 +11,81 @@ html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 16px;
   max-width: 1280px;
+  font-size: 18px;
   margin: 0 auto;
   padding: 0;
 }
 
 :root {
-  --bg-color-body: rgb(107, 100, 107);
-  --txt-align-center: center;
+  --bg-color-body: whitesmoke;
+  --bg-color-navbar: #343234e9;
+  --br-color-a: whitesmoke;
+  --br-color-button-a: #343234e9;
+  --font-color-text: #343234;
+  --font-color-navbar: whitesmoke;
+  --font-color-navbar-underline-home: red;
+  --font-color-navbar-underline-rent: yellow;
+  --font-color-navbar-underline-rese: pink;
+  --font-color-navbar-underline-cont: orange;
+  --font-color-navbar-underline-logo: lightblue;
 
-  --font-logo: "hey-eloise-watercolor", sans-serif;
-  --font-text: "Quicksand", sans-serif;
+  --h1--header-font-size: 2rem;
+  --h2--header-font-size: 1.5rem;
+  --h3--header-font-size: 1rem;
+
+  --font-logo-h1: "chantal", "hey-eloise-watercolor", sans-serif;
+  --font-text-navbar: "pf-reminder", "Quicksand", sans-serif;
+  --font-text-h2-h6-para: "Quicksand", sans-serif;
 }
 
+/*  GLOBAL ELEMENTS SETTINGS*/
 body {
-  font-family: var(--font-text);
+  font-family: var(--font-text-para);
+  color: var(--font-color-text);
   background: var(--bg-color-body);
+}
+
+h1 {
+  margin: 50px 2vw;
+  text-align: center;
+  font-family: var(--font-logo-h1);
+  font-size: var(--h1--header-font-size);
+}
+
+h2,
+h3 {
+  margin-top: 40px;
+  font-family: var(--font-text-h2-h6-para);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: var(--h2--header-font-size);
+}
+
+h3 {
+  font-size: var(--h3--header-font-size);
+}
+
+picture hr {
+  margin-top: -6px;
+}
+
+section {
+  margin: 10px 2vw;
+}
+
+p {
+  margin: 5px 0;
 }
 
 /*  NAV BAR CONFIG  */
 
 nav {
-  background: #222;
   padding: 5px 20px;
+  font-family: var(--font-text-navbar);
+  background: var(--bg-color-navbar);
 }
 
 ul {
@@ -42,33 +93,59 @@ ul {
 }
 
 a {
-  color: white;
+  color: var(--font-color-navbar);
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+a.blue:hover {
+  text-decoration: underline var(--font-color-navbar-underline-logo);
+  text-decoration-thickness: 5px;
 }
 
-.logo a:hover {
-  text-decoration: none;
+a.red:hover {
+  text-decoration: underline var(--font-color-navbar-underline-home);
+  text-decoration-thickness: 5px;
+}
+
+a.yellow:hover {
+  text-decoration: underline var(--font-color-navbar-underline-rent);
+  text-decoration-thickness: 5px;
+}
+
+a.pink:hover {
+  text-decoration: underline var(--font-color-navbar-underline-rese);
+  text-decoration-thickness: 5px;
+}
+
+a.orange:hover {
+  text-decoration: underline var(--font-color-navbar-underline-cont);
+  text-decoration-thickness: 5px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.logo a {
+  font-family: var(--font-logo-h1);
+  font-size: 40px;
 }
 
 .menu li {
+  margin: 0;
   padding: 15px 5px;
   white-space: nowrap;
 }
 
-.logo a {
-  font-family: var(--font-logo);
-  font-size: 40px;
-  font-weight: 400;
-  font-style: normal;
-
+.button.signin {
+  border-bottom: 1px solid gray;
 }
 
-.button.signin {
-  border-bottom: 1px #444 solid;
+.button.signin:hover,
+.button.login:hover {
+  text-decoration: underline green;
+  text-decoration-thickness: 5px;
 }
 
 .menu {
@@ -87,7 +164,6 @@ a:hover {
 }
 
 /**HAMBURGER CONFIG**/
-
 .item {
   width: 100%;
   text-align: center;
@@ -113,7 +189,9 @@ a:hover {
 }
 
 .toggle {
-  font-size: 1.2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
   width: 30px;
   height: 30px;
 }
@@ -121,10 +199,6 @@ a:hover {
 /* END NAVBAR CONFIG  */
 
 /* MAIN HERO IMG CONFIG  */
-h1 {
-  text-align: var(--txt-align-center);
-}
-
 .hero.container {
   position: relative;
   width: 100%;
@@ -136,35 +210,35 @@ h1 {
   height: auto;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 .hero a {
   position: absolute;
-  top: 80%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 15px;
   text-decoration: none;
   text-align: center;
-  border: 2px solid whitesmoke;
+  font-family: var(--font-text-navbar);
+  border: 2px solid var(--br-color-a);
   border-radius: 8px;
-  background:  rgba(107, 102, 107, 0.502);
-  
+  background: var(--br-color-button-a);
 }
 
 .hero a:hover {
-  color: var(--bg-color-body);
-  animation: mylastmove 0.5s;
-  animation-fill-mode: both;
+  color: #343234;
+  background: var(--bg-color-body);
 }
 
-@keyframes mylastmove {
-  from {background: var(--bg-color-body);}
-  to {background: whitesmoke;}
+.hero img.logo {
+  display: none;
+}
+
+/*  Section CARD INFORMATION*/
+.title,
+.subtitle.facilities {
+  text-align: center;
+}
+
+.hashtag {
+  font-weight: bold;
 }
