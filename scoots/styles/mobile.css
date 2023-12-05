@@ -41,7 +41,7 @@ html {
 
 /*  GLOBAL ELEMENTS SETTINGS*/
 body {
-  font-family: var(--font-text-para);
+  font-family: var(--font-text-h2-h6-para);
   color: var(--font-color-text);
   background: var(--bg-color-body);
 }
@@ -127,6 +127,10 @@ a.orange:hover {
   height: auto;
 }
 
+.logo a {
+  font-family: var(--font-logo-h1);
+  font-size: 30px;
+}
 .menu li {
   margin: 0;
   padding: 15px 5px;
