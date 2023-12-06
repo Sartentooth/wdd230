@@ -56,6 +56,7 @@ h1 {
 h2,
 h3 {
   margin-top: 40px;
+  margin-bottom: 10px;
   font-family: var(--font-text-h2-h6-para);
   font-weight: bold;
 }
@@ -231,14 +232,33 @@ a.orange:hover {
   display: none;
 }
 
-/*  Section CARD INFORMATION*/
+/*  Section CARD & RENTAL FACILITIES*/
 .title,
 .subtitle.slogan {
   text-align: center;
 }
 
+.card.information h3 {
+  padding: 5px 0;
+  background: var(--font-color-navbar-underline-cont);
+}
+
 .hashtag {
   font-weight: bold;
+}
+
+.rental img {
+  width: 100%;
+  height: auto;
+  border: 5px solid var(--font-color-navbar-underline-logo);
+  border-radius: 45px;
+  
+}
+
+.card.el-centro h3,
+.card.puerta-maya h3 {
+  padding: 5px 0;
+  background: var(--font-color-navbar-underline-logo);
 }
 
 .italic {
