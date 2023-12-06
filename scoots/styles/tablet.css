@@ -95,4 +95,23 @@
     height: auto;
     transform: translate(-50%, -50%);
   }
+
+  .rental {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .card.el-centro {
+    text-align: justify;
+  }
+
+  .card.puerta-maya {
+    text-align: justify;
+    order: 1;
+  }
+
+  .card.puerta-maya h3 {
+    text-align: right;
+  }
 }

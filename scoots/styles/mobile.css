@@ -73,7 +73,7 @@ h3 {
 }
 
 section {
-  margin: 10px 2vw;
+  margin: 50px 2vw;
 }
 
 p {
@@ -239,4 +239,8 @@ a.orange:hover {
 
 .hashtag {
   font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
 }
