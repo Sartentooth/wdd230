@@ -1,6 +1,10 @@
 @media only screen and (min-width: 580px) {
 
   /*  NAVBAR CONFIG  */
+
+  h2, h3 {
+    margin-top: 0;
+  }
   .menu {
     justify-content: center;
   }
@@ -96,22 +100,30 @@
     transform: translate(-50%, -50%);
   }
 
+  /* end hero button*/
+
   .rental {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 40px;
   }
 
-  .card.el-centro {
+  .card.el-centro,
+  .card.puerta-maya  {
     text-align: justify;
   }
 
   .card.puerta-maya {
-    text-align: justify;
     order: 1;
   }
 
   .card.puerta-maya h3 {
     text-align: right;
+  }
+
+  .facilities img {
+    width: 480px;
+    height: auto;
   }
 }

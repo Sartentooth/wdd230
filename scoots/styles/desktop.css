@@ -1,26 +1,35 @@
 @media all and (min-width: 1025px) {
+
   /*  NAVBAR CONFIG  */
   .item {
     display: block;
     width: auto;
   }
+
   .tg {
     display: none;
   }
+
   .logo {
     order: 0;
   }
+
   .item {
     order: 1;
   }
+
   .button {
     order: 2;
   }
+
   .menu li {
     padding: 15px 10px;
   }
+
   .menu li.button {
     padding-right: 0;
   }
+
   /*  END NAVBAR CONFIG  */
+
 }
