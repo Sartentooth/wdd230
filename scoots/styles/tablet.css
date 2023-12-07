@@ -103,15 +103,19 @@
   /* end hero button*/
 
   .rental {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 40px;
   }
 
-  .card.el-centro,
-  .card.puerta-maya  {
-    text-align: justify;
+  .card.el-centro {
+    text-align: left;
+  }
+
+  .card.puerta-maya {
+    text-align: right;
   }
 
   .card.puerta-maya {
@@ -125,5 +129,9 @@
   .facilities img {
     width: 480px;
     height: auto;
+  }
+
+  .rental img:hover {
+    opacity: 0.4;
   }
 }

@@ -30,18 +30,18 @@ html {
   --font-color-navbar-underline-cont: orange;
   --font-color-navbar-underline-logo: lightblue;
 
-  --h1--header-font-size: 2rem;
-  --h2--header-font-size: 1.5rem;
-  --h3--header-font-size: 1rem;
+  --h1--header-font-size: 2.2rem;
+  --h2--header-font-size: 1.9rem;
+  --h3--header-font-size: 1.5rem;
 
-  --font-logo-h1: "chantal", "hey-eloise-watercolor", sans-serif;
-  --font-text-navbar: "pf-reminder", "Quicksand", sans-serif;
-  --font-text-h2-h6-para: "Quicksand", sans-serif;
+  --font-logo-h1: "chantal", sans-serif;
+  --font-text-h2-h3-navbar: "pf-reminder", sans-serif;
+  --font-text-para: "acumin-pro", sans-serif;
 }
 
 /*  GLOBAL ELEMENTS SETTINGS*/
 body {
-  font-family: var(--font-text-h2-h6-para);
+  font-family: var(--font-text-para);
   color: var(--font-color-text);
   background: var(--bg-color-body);
 }
@@ -57,7 +57,7 @@ h2,
 h3 {
   margin-top: 40px;
   margin-bottom: 10px;
-  font-family: var(--font-text-h2-h6-para);
+  font-family: var(--font-text-h2-h3-navbar);
   font-weight: bold;
 }
 
@@ -85,7 +85,7 @@ p {
 
 nav {
   padding: 5px 20px;
-  font-family: var(--font-text-navbar);
+  font-family: var(--font-text-h2-h3-navbar);
   background: var(--bg-color-navbar);
 }
 
@@ -121,6 +121,11 @@ a.pink:hover {
 a.orange:hover {
   text-decoration: underline var(--font-color-navbar-underline-cont);
   text-decoration-thickness: 5px;
+}
+
+.link.active {
+  padding: 7.5px 5px;
+  background: rgb(82, 92, 91);
 }
 
 .logo img {
@@ -266,7 +271,7 @@ a.orange:hover {
 }
 
 .rental {
-  text-align: justify;
+  text-align: left;
 }
 
 .italic {
