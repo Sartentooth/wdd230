@@ -142,7 +142,7 @@
   }
 
   .weather-container h4 span {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-left: 10px;
     text-shadow: 0 1px 0 #ccc,
       0 2px 0 #c9c9c9,
@@ -158,8 +158,23 @@
       0 20px 20px rgba(0, 0, 0, .15);
   }
 
+  #current-temp,
+  #current-feel,
+  #current-press,
+  #weather-hr,
+  #weather-desc {
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  #weather-icon {
+    width: 50px;
+  }
+
   .containerAPI {
     width: auto;
+    flex: 1 4;
   }
 
 }
