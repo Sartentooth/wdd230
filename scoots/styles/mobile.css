@@ -13,7 +13,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 1280px;
-  font-size: 20px;
+  font-size: 18px;
   margin: 0 auto;
   padding: 0;
 }
@@ -84,7 +84,6 @@ h4 {
 
 }
 
-
 section {
   margin: 50px 2vw;
 }
@@ -93,12 +92,10 @@ p {
   margin: 5px 0;
 }
 
-
 /*  NAV BAR CONFIG  */
 
 nav {
-  margin: 0;
-  padding: 0 20px;
+  padding: 5px 20px;
   font-family: var(--font-text-h2-h3-navbar);
   background: var(--bg-color-navbar);
 }
@@ -155,7 +152,8 @@ a.orange:hover {
 }
 
 .menu li {
-  padding: 15px 5px;
+  margin: 0;
+  padding: 15px 10px;
   white-space: nowrap;
 }
 
@@ -236,7 +234,7 @@ a.orange:hover {
   height: auto;
 }
 
-.hero a {
+.hero-button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -249,9 +247,24 @@ a.orange:hover {
   background: var(--br-color-button-a);
 }
 
-.hero a:hover {
+.contact-button {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid var(--br-color-a);
+  border-radius: 8px;
+  background: var(--br-color-button-a);
+}
+
+.hero a:hover,
+.contact-button:hover {
   color: #343234;
-  background: var(--bg-color-body);
+  background: whitesmoke;
+  text-shadow: none;
 }
 
 .hero img.logo {
@@ -365,7 +378,6 @@ a.orange:hover {
   width: auto;
 }
 
-
 .tfforecast th,
 .tfforecast td {
   text-align: center;
@@ -391,10 +403,11 @@ a.orange:hover {
 .contact {
   position: relative;
   padding: 20px;
+  height: 800px;
+  text-shadow: 3px 3px 2px rgb(17, 17, 16);
   color: var(--font-color-navbar);
-  background: #BBD2C5;
-  background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5);
-  background: linear-gradient(to top, #292E49, #536976, #BBD2C5);
+  background-size: cover;
+  background-image: url(/scoots/images/bg-contact-tablet.webp);
 }
 
 .contact div {

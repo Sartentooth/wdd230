@@ -1,7 +1,7 @@
 @media all and (min-width: 1025px) {
 
   /*  NAVBAR CONFIG  */
-  
+
   .item {
     display: block;
     width: auto;
@@ -58,9 +58,8 @@
   }
 
   .contact {
-    text-shadow: 3px 3px 2px rgb(17, 17, 16);
-    border: 2px solid lightskyblue;
-    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(/scoots/images/bg-contact-desktop.webp);
   }
 
