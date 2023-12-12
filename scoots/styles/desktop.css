@@ -1,6 +1,7 @@
 @media all and (min-width: 1025px) {
 
   /*  NAVBAR CONFIG  */
+  
   .item {
     display: block;
     width: auto;
@@ -23,7 +24,8 @@
   }
 
   .menu li {
-    padding: 15px 10px;
+    margin: 0 10px;
+    padding-left: 0;
   }
 
   .menu li.button {
@@ -54,4 +56,12 @@
     width: auto;
     flex: none;
   }
+
+  .contact {
+    text-shadow: 3px 3px 2px rgb(17, 17, 16);
+    border: 2px solid lightskyblue;
+    border-radius: 10px;
+    background-image: url(/scoots/images/bg-contact-desktop.webp);
+  }
+
 }

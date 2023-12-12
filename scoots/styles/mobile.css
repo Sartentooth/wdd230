@@ -13,7 +13,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 1280px;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0 auto;
   padding: 0;
 }
@@ -51,6 +51,10 @@ body {
   background: var(--bg-color-body);
 }
 
+header {
+  border-bottom: 2px solid var(--br-color-a);
+}
+
 h1 {
   margin: 50px 2vw;
   text-align: center;
@@ -80,9 +84,6 @@ h4 {
 
 }
 
-.hr-line {
-  margin-top: -6px;
-}
 
 section {
   margin: 50px 2vw;
@@ -92,10 +93,12 @@ p {
   margin: 5px 0;
 }
 
+
 /*  NAV BAR CONFIG  */
 
 nav {
-  padding: 5px 20px;
+  margin: 0;
+  padding: 0 20px;
   font-family: var(--font-text-h2-h3-navbar);
   background: var(--bg-color-navbar);
 }
@@ -105,6 +108,7 @@ ul {
 }
 
 a {
+  font-size: 20px;
   color: var(--font-color-navbar);
   text-decoration: none;
 }
@@ -135,8 +139,9 @@ a.orange:hover {
 }
 
 .link.active {
-  padding: 7.5px 5px;
-  background: rgb(82, 92, 91);
+  padding: 14px 16px;
+  color: var(--font-color-text);
+  background: rgb(242, 224, 184);
 }
 
 .logo img {
@@ -150,7 +155,6 @@ a.orange:hover {
 }
 
 .menu li {
-  margin: 0;
   padding: 15px 5px;
   white-space: nowrap;
 }
@@ -161,7 +165,7 @@ a.orange:hover {
 
 .button.signin:hover,
 .button.login:hover {
-  text-decoration: underline green;
+  text-decoration: underline rgb(166, 236, 75);
   text-decoration-thickness: 5px;
 }
 
@@ -216,6 +220,11 @@ a.orange:hover {
 /* END NAVBAR CONFIG  */
 
 /* MAIN HERO IMG CONFIG  */
+
+.strong {
+  font-weight: bold;
+}
+
 .hero.container {
   position: relative;
   width: 100%;
@@ -304,7 +313,7 @@ a.orange:hover {
   position: sticky;
   bottom: 0;
   margin: 0 auto;
-  border: 1px inset;
+  border: 2px solid lightskyblue;
   border-radius: 10px 10px 0 0;
   background: linear-gradient(180deg, rgb(199, 224, 245), rgb(248, 232, 201));
 }
@@ -377,4 +386,17 @@ a.orange:hover {
 .tfforecast th span,
 .tfforecast td span {
   font-size: 15px;
+}
+
+.contact {
+  position: relative;
+  padding: 20px;
+  color: var(--font-color-navbar);
+  background: #BBD2C5;
+  background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5);
+  background: linear-gradient(to top, #292E49, #536976, #BBD2C5);
+}
+
+.contact div {
+  margin: 40px;
 }
