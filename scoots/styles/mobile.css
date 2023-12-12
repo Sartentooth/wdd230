@@ -407,9 +407,91 @@ a.orange:hover {
   text-shadow: 3px 3px 2px rgb(17, 17, 16);
   color: var(--font-color-navbar);
   background-size: cover;
-  background-image: url(/scoots/images/bg-contact-tablet.webp);
+  background-image: url(https://sartentooth.github.io/wdd230/scoots/images/bg-contact-tablet.webp);
 }
 
 .contact div {
   margin: 40px;
+}
+
+/* banner config  */
+.promo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo p {
+  margin: 0vw;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: var(--bg-color-body);
+
+}
+
+.text {
+  display: none;
+}
+
+.close {
+  color: var(--paragraph-color-on-color);
+  background-color: red;
+}
+
+/* Anitation provide by CodePen */
+.banner,
+.close {
+  animation-name: parpadeo;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+  0% {
+      opacity: 1.0;
+  }
+
+  50% {
+      opacity: 0.0;
+  }
+
+  100% {
+      opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+      opacity: 1.0;
+  }
+
+  50% {
+      opacity: 0.0;
+  }
+
+  100% {
+      opacity: 1.0;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+      opacity: 1.0;
+  }
+
+  50% {
+      opacity: 0.0;
+  }
+
+  100% {
+      opacity: 1.0;
+  }
 }

@@ -182,7 +182,7 @@
     border: 2px solid lightskyblue;
     border-radius: 10px;
     background-size: cover;
-    background-image: url(/scoots/images/bg-contact-tablet.webp);
+    background-image: url(https://sartentooth.github.io/wdd230/scoots/images/bg-contact-tablet.webp);
   }
 
   .contact-button {
