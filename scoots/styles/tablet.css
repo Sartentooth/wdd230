@@ -178,23 +178,23 @@
   }
 
   .contact {
-    column-count: 3;
     border: none;
-    background-image: none;
+    background-size: cover;
+    background-image: url(/scoots/images/bg-contact-tablet.webp);
   }
 
   .contact-button {
     top: 50%;
-    left: 80%;
+    left: 70%;
     transform: translate(-50%, -50%);
   }
-  
+
   .puerta-maya-branch {
     position: absolute;
     bottom: 15%;
     left: 38%;
   }
-  
+
   .el-centro-branch {
     position: absolute;
     top: 6%;

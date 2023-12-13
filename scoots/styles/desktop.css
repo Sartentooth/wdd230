@@ -56,4 +56,14 @@
     width: auto;
     flex: none;
   }
+
+  .contact {
+    background-image: url(/scoots/images/bg-contact-desktop.webp);
+  }
+
+  .contact-button {
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+  }
 }
