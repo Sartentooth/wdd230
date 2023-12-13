@@ -48,7 +48,9 @@ body {
   font-family: var(--font-text-para);
   font-weight: 300;
   color: var(--font-color-text);
-  background: var(--bg-color-body);
+  background: #fceabb;
+  background: -webkit-linear-gradient(to bottom, #f8b500, #fceabb);
+  background: linear-gradient(to bottom, #f8b500, #fceabb);
 }
 
 header {
@@ -249,11 +251,12 @@ a.orange:hover {
 
 .contact-button {
   position: absolute;
-  top: 95%;
+  top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 15px;
   text-decoration: none;
+  text-shadow: none;
   text-align: center;
   border: 2px solid var(--br-color-a);
   border-radius: 8px;
@@ -277,8 +280,13 @@ a.orange:hover {
   text-align: center;
 }
 
-.hashtag {
-  font-weight: bold;
+main {
+  background:#e8e5d7;
+}
+
+.card.information p,
+.rental p {
+  margin-bottom: 30px;
 }
 
 .facilities {
@@ -300,8 +308,8 @@ a.orange:hover {
   width: 100%;
   height: auto;
   cursor: pointer;
-  border: 5px solid var(--font-color-navbar-underline-logo);
-  border-radius: 45px;
+  border: 2px solid var(--font-color-navbar-underline-logo);
+  border-radius: 10px;
 }
 
 .rental {
@@ -323,8 +331,8 @@ a.orange:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  position: sticky;
-  bottom: 0;
+  /* position: sticky; */
+  bottom: 5%;
   margin: 0 auto;
   border: 2px solid lightskyblue;
   border-radius: 10px 10px 0 0;
@@ -403,15 +411,30 @@ a.orange:hover {
 .contact {
   position: relative;
   padding: 20px;
-  height: 800px;
-  text-shadow: 3px 3px 2px rgb(17, 17, 16);
-  color: var(--font-color-navbar);
-  background-size: cover;
-  background-image: url(https://sartentooth.github.io/wdd230/scoots/images/bg-contact-tablet.webp);
+  height: auto;
+  text-shadow: 3px 3px 2px rgb(236, 236, 225);
+  color: var(--font-color-text);
 }
 
 .contact div {
   margin: 40px;
+}
+
+.social.media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+  gap: 10px;
+}
+
+.social p {
+  font-size: 30px;
+}
+
+.social.icon {
+  width: 30px;
+  height: auto;
 }
 
 /* banner config  */
@@ -436,7 +459,7 @@ a.orange:hover {
 }
 
 .close {
-  color: var(--paragraph-color-on-color);
+  color: var(--bg-color-body);
   background-color: red;
 }
 
@@ -456,42 +479,176 @@ a.orange:hover {
 
 @-moz-keyframes parpadeo {
   0% {
-      opacity: 1.0;
+    opacity: 1.0;
   }
 
   50% {
-      opacity: 0.0;
+    opacity: 0.0;
   }
 
   100% {
-      opacity: 1.0;
+    opacity: 1.0;
   }
 }
 
 @-webkit-keyframes parpadeo {
   0% {
-      opacity: 1.0;
+    opacity: 1.0;
   }
 
   50% {
-      opacity: 0.0;
+    opacity: 0.0;
   }
 
   100% {
-      opacity: 1.0;
+    opacity: 1.0;
   }
 }
 
 @keyframes parpadeo {
   0% {
-      opacity: 1.0;
+    opacity: 1.0;
   }
 
   50% {
-      opacity: 0.0;
+    opacity: 0.0;
   }
 
   100% {
-      opacity: 1.0;
+    opacity: 1.0;
   }
+}
+
+/* form */
+.form-cont {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding-top: 10px;
+  width: 330px;
+}
+
+input::placeholder {
+  color: rgb(170, 175, 180);
+}
+
+.form-cont label {
+  margin-bottom: 8px;
+  align-self: flex-start;
+  font-weight: bold;
+  font-family: var(--font-text-h2-h3-navbar);
+}
+
+.form-cont input,
+textarea {
+  margin-bottom: 16px;
+  padding: 8px;
+  width: 330px;
+  border: 4px;
+  border-radius: 4px;
+  font-family: var(--font-text-para);
+}
+
+.form-cont button {
+  margin-top: 20px;
+  width: calc(100% - 20px);
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.form img {
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+button {
+  background: var(--font-color-navbar-underline-cont);
+}
+
+button:hover {
+  color: var(--br-color-a);
+  background: var(--bg-color-navbar);
+}
+
+input:required,
+textarea {
+  border: 1px solid var(--font-color-navbar-underline-cont);
+  border-left: 3px solid var(--font-color-navbar-underline-cont);
+  border-right: 3px solid var(--font-color-navbar-underline-cont);
+}
+
+input:valid {
+  background: var(--bg-color-input-valid);
+}
+
+#error-message {
+  margin: -10px 0 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+}
+
+/* contact page*/
+.iframe-cont {
+  position: relative;
+  text-align: center;
+
+}
+
+iframe {
+  border: none;
+}
+
+.gmap-canvas iframe {
+  width: 100%;
+  height: 600px;
+}
+
+.puerta-maya-branch,
+.el-centro-branch {
+  font-size: 2rem;
+  text-shadow: 0 0 10px rgb(247, 216, 133);
+}
+
+.puerta-maya-branch {
+  position: absolute;
+  bottom: 15%;
+  left: 25%;
+}
+
+.el-centro-branch {
+  position: absolute;
+  top: 6%;
+  left: 30%;
+}
+
+/* contact page end */
+
+
+
+footer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-areas:
+    "";
+
+  background: #dfe4b0;
 }

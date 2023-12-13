@@ -34,30 +34,108 @@
 		<header>
 			<nav>
 				<ul class="menu">
-					<li class="logo"><a class="blue" href="index.html"><img src="images/logo.webp" alt="logo navbar image"
+					<li class="logo"><a class="blue" href="index.html"><img src="images/logo.webp"
+								alt="logo image Scoots rent your ride in Cozumel Mexíco, ride with our scooters and cars"
 								loading="eager"></a></li>
 					<li class="item"><a class="link red" href="index.html">Home</a></li>
 					<li class="item"><a class="link yellow" href="rentals.html">Rentals</a></li>
-					<li class="item"><a class="link pink" href="reservations.html">Reservartions</a></li>
-					<li class="item"><a class="link orange" href="contact.html">Contac</a></li>
+					<li class="item"><a class="link pink" href="reservations.html">Reservations</a></li>
+					<li class="item"><a class="link orange" href="contact.html">Contact</a></li>
 					<li class="item button login"><a href="form-login.html">Log In</a></li>
 					<li class="item button signin"><a href="form-signin.html">Sign Up</a></li>
 					<li class="tg"><button class="toggle"></button></li>
 				</ul>
 			</nav>
 		</header>
-		<hr>
 
 		<main>
+			<section class="contact">
+
+				<h2 class="subtitle">Contact Us</h2>
+				<p>Have questions or need assistance? Reach out to us!</p>
+
+				<div class="contact-info">
+					<h3 class="subtitle">Visit Our Offices</h3>
+					<p><span class="strong">El Centro Cozumel Branch:</span><br>
+						123 Ocean Avenue, Playa del Carmen<br>
+						Cozumel, Mexico</p>
+
+					<p><span class="strong">Near Puerta Maya Terminal Branch:</span><br>
+						456 Palm Street, Puerta Maya<br>
+						Cozumel, Mexico</p>
+				</div>
+
+				<div class="contact-info">
+					<h3 class="subtitle">Contact Numbers</h3>
+					<p><span class="strong">Main Office:</span> +1 (123) 456-7890</p>
+					<p><span class="strong">El Centro Branch:</span> +1 (987) 654-3210</p>
+					<p><span class="strong">Puerta Maya Branch:</span> +1 (555) 123-4567</p>
+				</div>
+
+				<div class="contact-info">
+					<h3 class="subtitle">Email Us</h3>
+					<p><span class="strong">General Inquiries:</span> info@scootsrental.com</p>
+					<p><span class="strong">Reservations:</span> reservations@scootsrental.com</p>
+					<p><span class="strong">Customer Support:</span> support@scootsrental.com</p>
+				</div>
+			</section>
+
+			<section>
+				<div class="iframe-cont">
+					<div class="gmap-canvas">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23379.154521331133!2d-86.96317573993436!3d20.494683219084646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1702431311935!5m2!1ses-419!2sar"
+							loading="lazy" title="Scoots Cozumel Branch Maps"></iframe>
+					</div>
+					<h4 class="puerta-maya-branch">🛵 Puerta Maya Branch</h4>
+					<h4 class="el-centro-branch">El Centro Branch 🛵</h4>
+				</div>
+			</section>
+
+			<section>
+				<div class="form-cont">
+
+					<form class="form" action="thankyou.html" method="get" target="_blank">
+						<div id="error-message"></div>
+
+						<label>Full Name
+							<input type="text" name="first-name" id="first-name" pattern="[A-Za-z\- ]{7,15}"
+								placeholder="enter your name" required>
+						</label>
+
+						<label>Email
+							<input type="email" name="mail" id="mail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{3,}$"
+								title="Please, enter a valid email address" placeholder="youremail@gmail.com" required>
+						</label>
+
+						<label>Comments
+							<textarea name="description" id="description" cols="50" rows="10"
+								placeholder="leave a message with your Comments"></textarea>
+						</label>
+
+						<input type="hidden" name="dtime" id="dtime" value="">
+
+						<div class="buttons">
+							<button class="submit" type="submit">SUBMIT</button>
+							<button class="reset" type="reset">RESET FORM</button>
+						</div>
+						<img src="images/logo.webp" alt="small-logo">
+					</form>
+			</section>
 
 		</main>
 
 		<footer>
-
+			<div class="social media">
+				<p>follow us on</p>
+				<img class="social icon" src="images/facebook.svg" alt="Scoots on facebook, Follow us.">
+			</div>
 		</footer>
 
 		<script src="scripts/toggle.js"></script>
 		<script src="scripts/currentpage.js"></script>
+		<script src="scripts/weather.js"></script>
+		<script src="scripts/promo.js"></script>
 	</body>
 
 </html>

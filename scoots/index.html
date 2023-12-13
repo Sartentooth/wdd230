@@ -66,7 +66,7 @@
 
 			<div class="heading">
 
-				<div class="text">
+				<div class="title-text">
 					<h1 class="title">Limitless Exploration with Scooter and Jeep Rental</h1>
 					<h2 class="subtitle slogan">Discover Cozumel your way: Rent your Adventure, Live Freedom</h2>
 				</div>
@@ -78,17 +78,28 @@
 				<div class="card information">
 					<h3 class="subtitle">About Us</h3>
 					<p>Welcome to the island paradise of Cozumel, where the sea breeze blends with the excitement of exploring the
-						island on our Honda scooters and Jeep Wranglers.</p>
-					<br>
-					<p>Ready to discover every corner of the island in style?
-						You're in the right place! With two strategically located rental facilities in El Centro and at the Puerta
-						Maya terminal, we make access to fun easy for you.</p>
-					<br>
-					<p>Whether you choose the agility of a scooter or the
+						island on our Honda scooters and Jeep Wranglers. Ready to discover every corner of the island in style?
+						You’re in the right place! With two strategically located rental facilities in El Centro and at the Puerta
+						Maya terminal, we make access to fun easy for you. Whether you choose the agility of a scooter or the
 						sturdiness of a Jeep, your journey begins here. Unwind and immerse yourself in the beauty of Cozumel. Rent
 						with us and let the adventure begin!</p>
-					<br>
-					<p><span class="hashtag">#ExploreCozumel</span> <span class="hashtag">#FreedomOnWheels</span> 🌴🛵🚙</p>
+
+						<p>Cozumel is known for its stunning coral reefs, which are home to an unparalleled diversity of marine life.
+						Our vehicles will allow you to reach the island’s best diving and snorkeling spots with ease. Imagine the
+						thrill of swimming alongside sea turtles, rays, and a burst of colorful tropical fish.</p>
+
+						<p>In addition, Cozumel has a rich Mayan history and culture that is worth exploring. With our Jeeps, you can
+						venture into the ancient Mayan ruins, such as San Gervasio, and learn about the fascinating history of this
+						ancient civilization. Or perhaps you prefer to stroll through the vibrant market of El Centro, where you can
+						shop for local crafts and sample delicious Mexican cuisine.</p>
+
+						<p>But that’s not all. Cozumel also offers a variety of outdoor activities, from hiking and cycling to bird
+						watching and fishing. Our vehicles are perfect for taking you on these adventures, offering you the freedom
+						to explore at your own pace. At the end of the day, nothing compares to watching the sunset over the Caribbean Sea from the comfort of
+						your Jeep. It’s the perfect end to a day full of adventures.</p>
+
+						<p>So, what are you waiting for? Rent with us and discover all that Cozumel has to offer. We look forward to
+						welcoming you and helping you start your island adventure!</p>					
 				</div>
 
 			</section>
@@ -104,11 +115,11 @@
 					<p>Discover the thrill of exploring Cozumel from our <span class="italic">El Centro Cozumel</span> Branch near
 						to Playa del Carmen, strategically located near the ferry. Here, we offer a wide range of vehicles to make
 						your adventure unforgettable.</p>
-					<br>
+					
 					<p>From Honda scooters ideal for 1 or 2 persons to Honda Side-by-Side ATVs accommodating 4 persons. Prefer the
 						versatility of a
 						Jeep Wrangler? We have models with 2 and 4 doors, perfect for 4 and 5 occupants respectively.</p>
-					<br>
+					
 					<p>Choose from our flexible rental options: half-day (3 hours) or full day. Additionally, we streamline your
 						experience by providing both advance reservations and walk-in rentals directly at our branch.</p>
 				</div>
@@ -127,7 +138,7 @@
 						you with the same quality of
 						service and a variety of vehicles. Whether you want to explore as a couple or in a group, we have Honda
 						scooters, Side-by-Side ATVs, and Jeep Wranglers to meet all your needs.</p>
-					<br>
+					
 					<p>Just like in El Centro, at this location, we offer tailored rental options: half-day or full day.
 						Whether you prefer to plan ahead with an advance reservation or decide on the spot with a walk-in rental, we
 						are here to make your experience in Cozumel unforgettable.</p>
@@ -173,65 +184,71 @@
 				<a class="contact-button" href="contact.html">CONNECT WITH US!</a>
 			</section>
 
+			<div class="weather-container">
+
+				<h4><span class="city"></span>, <span class="country"></span></h4>
+
+				<div class="containerAPI">
+					<figure id="weatherAPI">
+						<span id="current-temp"></span>
+						<span id="current-feel"></span>
+						<span id="current-press"></span>
+						<span id="weather-hr"></span>
+						<img id="weather-icon" src="#" alt="weather icon image">
+						<span id="weather-desc"></span>
+					</figure>
+				</div>
+				<table class="tfforecast">
+					<tr>
+						<th><span class="day"></span></th>
+						<th><span class="day1"></span></th>
+						<th><span class="day2"></span></th>
+					</tr>
+					<tr>
+						<td>
+							<figure class="forecastAPI">
+								<span id="forecast-temp"></span>
+								<img id="forecast-icon" src="#" alt="weather icon image">
+							</figure>
+						</td>
+						<td>
+							<figure class="forecastAPI">
+								<span id="forecast-temp1"></span>
+								<img id="forecast-icon1" src="#" alt="weather icon image">
+							</figure>
+						</td>
+						<td>
+							<figure class="forecastAPI">
+								<span id="forecast-temp2"></span>
+								<img id="forecast-icon2" src="#" alt="weather icon image">
+							</figure>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span id="forecast-desc"></span>
+						</td>
+						<td>
+							<span id="forecast-desc1"></span>
+						</td>
+						<td>
+							<span id="forecast-desc2"></span>
+						</td>
+					</tr>
+				</table>
+			</div>
 		</main>
-	
+
+
+
 		<footer>
 
-		</footer>
 
-		<div class="weather-container">
-
-			<h4><span class="city"></span>, <span class="country"></span></h4>
-
-			<div class="containerAPI">
-				<figure id="weatherAPI">
-					<span id="current-temp"></span>
-					<span id="current-feel"></span>
-					<span id="current-press"></span>
-					<span id="weather-hr"></span>
-					<img id="weather-icon" src="#" alt="weather icon image">
-					<span id="weather-desc"></span>
-				</figure>
+			<div class="social media">
+				<p>follow us on</p>
+				<img class="social icon" src="images/facebook.svg" alt="Scoots on facebook, Follow us.">
 			</div>
-			<table class="tfforecast">
-				<tr>
-					<th><span class="day"></span></th>
-					<th><span class="day1"></span></th>
-					<th><span class="day2"></span></th>
-				</tr>
-				<tr>
-					<td>
-						<figure class="forecastAPI">
-							<span id="forecast-temp"></span>
-							<img id="forecast-icon" src="#" alt="weather icon image">
-						</figure>
-					</td>
-					<td>
-						<figure class="forecastAPI">
-							<span id="forecast-temp1"></span>
-							<img id="forecast-icon1" src="#" alt="weather icon image">
-						</figure>
-					</td>
-					<td>
-						<figure class="forecastAPI">
-							<span id="forecast-temp2"></span>
-							<img id="forecast-icon2" src="#" alt="weather icon image">
-						</figure>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<span id="forecast-desc"></span>
-					</td>
-					<td>
-						<span id="forecast-desc1"></span>
-					</td>
-					<td>
-						<span id="forecast-desc2"></span>
-					</td>
-				</tr>
-			</table>
-		</div>
+		</footer>
 
 		<script src="scripts/toggle.js"></script>
 		<script src="scripts/currentpage.js"></script>

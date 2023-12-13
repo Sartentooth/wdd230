@@ -178,17 +178,26 @@
   }
 
   .contact {
-    height: auto;
-    border: 2px solid lightskyblue;
-    border-radius: 10px;
-    background-size: cover;
-    background-image: url(https://sartentooth.github.io/wdd230/scoots/images/bg-contact-tablet.webp);
+    column-count: 3;
+    border: none;
+    background-image: none;
   }
 
   .contact-button {
     top: 50%;
     left: 80%;
     transform: translate(-50%, -50%);
+  }
   
+  .puerta-maya-branch {
+    position: absolute;
+    bottom: 15%;
+    left: 38%;
+  }
+  
+  .el-centro-branch {
+    position: absolute;
+    top: 6%;
+    right: 25%;
   }
 }
