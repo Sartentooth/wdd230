@@ -85,7 +85,9 @@ h4 {
   font-size: var(--h4--header-font-size);
 
 }
-
+hr {
+  max-width: 1024px;
+}
 section {
   margin: 50px 2vw;
 }
@@ -408,16 +410,47 @@ main {
   font-size: 15px;
 }
 
+/*   gallery   */
+
+.gallery {
+  text-align: center;
+}
+
+figure {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+}
+
+.figure-gallery img {
+  width: 100%;
+  height: 300px;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 #f5f5f5, 0 6px 10px 0 #454546;
+}
+
+.figcap-gallery {
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.gallery h2 {
+  margin: 50px;
+  text-align: center;
+}
+
+/*  CONTAC US SECTION */
+
 .contact {
   position: relative;
-  padding: 20px;
+  padding: 0 20px 20px;
   height: auto;
-  text-shadow: 3px 3px 2px rgb(236, 236, 225);
+  text-shadow: 0 0px 10px #95c3eb;
   color: var(--font-color-text);
 }
 
 .contact div {
-  margin: 40px;
+  margin: 50px;
 }
 
 .social.media {
@@ -459,8 +492,7 @@ main {
 }
 
 .close {
-  color: var(--bg-color-body);
-  background-color: red;
+  background-color: whitesmoke;
 }
 
 /* Anitation provide by CodePen */
@@ -519,7 +551,7 @@ main {
   }
 }
 
-/* form */
+/* form contact us */
 .form-cont {
   display: flex;
   flex-direction: column;
