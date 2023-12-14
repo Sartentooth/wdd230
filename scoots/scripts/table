@@ -1,0 +1,56 @@
+document.addEventListener('DOMContentLoaded', function () {
+
+  const baseURL = "https://sartentooth.github.io/wdd230/";
+  const url = "https://sartentooth.github.io/wdd230/scoots/data/data.json"
+
+  async function pricing() {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        displayResults(data);
+      } else {
+        throw Error(await response.text());
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+});
+
+
+
+
+
+
+function construirTabla(data) {
+  // Obtener la referencia de la tabla
+  var tabla = document.getElementById('miTabla');
+
+  // Crear las filas de la tabla usando los datos del JSON
+  data.forEach(function (fila) {
+    var tr = document.createElement('tr');
+
+    // Crear celdas y agregar datos
+    Object.values(fila).forEach(function (valor) {
+      var td = document.createElement('td');
+      td.textContent = valor;
+      tr.appendChild(td);
+    });
+
+    // Agregar la fila a la tabla
+    tabla.appendChild(tr);
+  });
+}
+
+
+
+// const url = "";
+// // Cargar el archivo JSON
+// fetch('datos.json')
+//     .then(response => response.json())
+//     .then(data => {
+//         // Llamar a la función para construir la tabla
+//         construirTabla(data);
+//     })
+//     .catch(error => console.error('Error al cargar el JSON:', error));
