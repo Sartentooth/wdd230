@@ -1,25 +1,25 @@
-const baseURL = "https://sartentooth.github.io/wdd230/";
-const url = "https://sartentooth.github.io/wdd230/scoots/data/data.json"
+  const baseURL = "https://sartentooth.github.io/wdd230/";
+  const url = "https://sartentooth.github.io/wdd230/scoots/data/data.json"
 
-
-
-async function pricing() {
-  try {
-    const response = await fetch(url);
-    if (response.ok) {
-      const data = await response.json();
-      displayResults(data);
-    } else {
-      throw Error(await response.text());
+  const table = document.querySelector(".pricing");
+  
+  async function pricing() {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        displayResults(data);
+      } else {
+        throw Error(await response.text());
+      }
+    } catch (error) {
+      console.log(error);
     }
-  } catch (error) {
-    console.log(error);
   }
-}
 
-function displayResults(data) {
-
-}
+  function displayResults(data) {
+    
+  }
 
 pricing();
 
