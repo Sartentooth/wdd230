@@ -1,0 +1,66 @@
+{
+  "pricing": {
+    "reservation": {
+      "half_day_3hs": [
+        20,
+        30,
+        40,
+        50,
+        70,
+        60
+      ],
+      "full_day": [
+        30,
+        40,
+        50,
+        70,
+        100,
+        85
+      ]
+    },
+    "walk_in": {
+      "half_day_3hs": [
+        25,
+        35,
+        45,
+        60,
+        85,
+        70
+      ],
+      "full_day": [
+        35,
+        45,
+        55,
+        80,
+        125,
+        90
+      ]
+    }
+  },
+  "vehicles": [
+    {
+      "rental_type": "honda metro scooter",
+      "max_persons": 1
+    },
+    {
+      "rental_type": "honda dio scooter",
+      "max_persons": 2
+    },
+    {
+      "rental_type": "honda PCX150",
+      "max_persons": 2
+    },
+    {
+      "rental_type": "honda Pioneer ATV",
+      "max_persons": 4
+    },
+    {
+      "rental_type": "jeep wrangler 4 doors",
+      "max_persons": 5
+    },
+    {
+      "rental_type": "jeep wrangler 2 doors",
+      "max_persons": 4
+    }
+  ]
+}
