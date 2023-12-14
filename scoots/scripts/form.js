@@ -19,12 +19,12 @@ function validateInputs(element) {
     const regex = new RegExp(pattern);
     
     if (regex.test(userInput)) {
-        element.style.background = "var(--bg-color-input-valid)";
+        element.style.background = "#b2f5c8";
         errorMessage.innerText = "";
     } else {
-        element.style.background = "var(--bg-color-input-invalid)";
+        element.style.background = "#f1bfbf";
         element.focus();
-        errorMessage.innerText = "Please enter a valid Input";
+        errorMessage.innerText = `Please enter a valid Input`;
     }
 }
 
