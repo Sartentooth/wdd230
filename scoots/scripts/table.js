@@ -8,7 +8,7 @@
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        displayResults(data);
+        return data;
       } else {
         throw Error(await response.text());
       }
@@ -19,7 +19,7 @@
 
   const crearTabla = async () => {
     // Se extrae el valor vehicles del objeto que retorna la función "getdata" y se lo asigna a la variable "motos"
-    const { vehicles: motos } = await getdata();
+    const { vehicles: motos } = await pricing();
 
     motos.forEach((
         {
