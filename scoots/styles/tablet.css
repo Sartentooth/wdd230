@@ -241,7 +241,7 @@
   .contact {
     border: none;
     background-size: cover;
-    background-image: url(/scoots/images/bg-contact-tablet.webp);
+    background-image: url(https://sartentooth.github.io/wdd230/scoots/images/bg-contact-tablet.webp);
   }
 
   .contact-button {

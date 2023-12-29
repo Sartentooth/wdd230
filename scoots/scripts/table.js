@@ -1,47 +1,47 @@
-  const baseURL = "https://sartentooth.github.io/wdd230/";
-  const url = "https://sartentooth.github.io/wdd230/scoots/data/data.json"
+const baseURL = "https://sartentooth.github.io/wdd230/";
+const url = "https://sartentooth.github.io/wdd230/scoots/data/data.json"
 
-  const tbody = document.querySelector("tbody");
-  
-  async function pricing() {
-    try {
-      const response = await fetch(url);
-      if (response.ok) {
-        const data = await response.json();
-        return data;
-      } else {
-        throw Error(await response.text());
-      }
-    } catch (error) {
-      console.log(error);
+const tbody = document.querySelector("tbody");
+
+async function pricing() {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      crearTabla(data);
+    } else {
+      throw Error(await response.text());
     }
+  } catch (error) {
+    console.log(error);
   }
+}
 
-  const crearTabla = async () => {
-    // Se extrae el valor vehicles del objeto que retorna la función "getdata" y se lo asigna a la variable "motos"
-    const { vehicles: motos } = await pricing();
+const crearTabla = (data) => {
+  // Se extrae el valor vehicles del objeto que retorna la función "getdata" y se lo asigna a la variable "motos"
+  const { vehicles: motos } = data;
 
-    motos.forEach((
-        {
-            // Se extraen los valores "rental_type", "max_persons", "reservation" del objeto "vehicles"
-            rental_type,
-            max_persons,
-            reservation: {
-                // Se extraen los valores "reservation" y "walkIn"
-                reservation: {
-                    // Se extraen los valores "halfday3hsR" y "fullDayR" del objeto "reservation"
-                    halfday3hsR,
-                    fullDayR
-                },
-                walkIn: {
-                    // Se extraen los valores "halfday3hsR" y "fullDayR" del objeto "walkIn"
-                    halfday3hsW,
-                    fullDayW
-                }
-            }
+  motos.forEach((
+    {
+      // Se extraen los valores "rental_type", "max_persons", "reservation" del objeto "vehicles"
+      rental_type,
+      max_persons,
+      reservation: {
+        // Se extraen los valores "reservation" y "walkIn"
+        reservation: {
+          // Se extraen los valores "halfday3hsR" y "fullDayR" del objeto "reservation"
+          halfday3hsR,
+          fullDayR
+        },
+        walkIn: {
+          // Se extraen los valores "halfday3hsR" y "fullDayR" del objeto "walkIn"
+          halfday3hsW,
+          fullDayW
         }
-    ) => {
-        tbody.innerHTML += `
+      }
+    }
+  ) => {
+    tbody.innerHTML += `
             <tr>
                 <td>${rental_type}</td>
                 <td>${max_persons}</td>
@@ -51,9 +51,9 @@
                 <td>${fullDayW}</td>
                 </tr>
                 `;
-    });
+  });
 }
 
-crearTabla();
+pricing();
 
 
