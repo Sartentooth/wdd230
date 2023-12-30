@@ -24,6 +24,7 @@ const crearTabla = (data) => {
   motos.forEach((
     {
       // Se extraen los valores "rental_type", "max_persons", "reservation" del objeto "vehicles"
+      rental_image,
       rental_type,
       max_persons,
       reservation: {
@@ -43,6 +44,7 @@ const crearTabla = (data) => {
   ) => {
     tbody.innerHTML += `
             <tr>
+                <td>${rental_image}</td>
                 <td>${rental_type}</td>
                 <td>${max_persons}</td>
                 <td>${halfday3hsR}</td>
